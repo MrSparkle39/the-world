@@ -1,0 +1,62 @@
+The World — Generated Art Assets
+Generated: 2026-07-20
+Style: warm storybook fantasy, gouache/watercolor digital painting
+
+Companions (GenerateImage)
+- public/art/companions/spriggle-idle.png
+- public/art/companions/glim-idle.png
+- public/art/companions/pebbit-idle.png
+
+Explorers (GenerateImage)
+- public/art/explorers/ember-trail.png
+- public/art/explorers/moss-path.png
+- public/art/explorers/sky-thread.png
+- public/art/explorers/stone-song.png
+
+Locations (GenerateImage)
+- public/art/backwards-town/town-square-base.png
+- public/art/backwards-town/bakery-interior.png
+- public/art/backwards-town/wheel-room.png
+- public/art/backwards-town/general-store.png
+- public/art/backwards-town/arcade-hall.png
+- public/art/home/tower-room.png
+- public/art/map/the-between.png
+- public/art/adventure/observatory.png
+- public/art/adventure/fragment-path.png
+
+Overlays & NPCs (GenerateImage)
+- public/art/home/window-cracked-moon.png
+- public/art/backwards-town/sky-cracked-moon.png
+- public/art/backwards-town/mara-crumb.png
+- public/art/backwards-town/tock.png
+- public/art/backwards-town/mr-before.png
+- public/art/adventure/orra-vale.png
+
+Items (PIL script: scripts/generate_item_icons.py)
+- public/art/items/yesterdays-bun.png
+- public/art/items/pocket-crumb.png
+- public/art/items/jam-unopened.png
+- public/art/items/backwards-biscuit.png
+- public/art/items/empty-pie-recipe.png
+- public/art/items/clock-hand.png
+- public/art/items/rewind-token.png
+- public/art/items/tiny-tomorrow.png
+- public/art/items/small-lantern.png
+- public/art/items/crooked-rug.png
+- public/art/items/button-jar.png
+- public/art/items/companion-snack.png
+- public/art/items/town-poster.png
+- public/art/items/clockwork-hat.png
+- public/art/items/empty-map-frame.png
+- public/art/items/couriers-rewind-cap.png
+- public/art/items/moon-fragment.png
+- public/art/items/unbaked-loaf.png
+
+PWA Icons
+- public/icons/icon-512.png (GenerateImage)
+- public/icons/icon-192.png (resized from icon-512)
+
+Pre-existing (kept unchanged)
+- public/art/homepage/homepage-valley-base.png
+
+Total new/verified assets: 43 files
