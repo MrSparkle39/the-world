@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The World — A Place of Wonder</title>
+    <meta
+      name="description"
+      content="Enter The World — a mystical online adventure of creatures, quests, and wonder."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Great+Vibes&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="world" id="world">
+      <div class="sky-layer" aria-hidden="true">
+        <div class="cloud cloud-a"></div>
+        <div class="cloud cloud-b"></div>
+        <div class="cloud cloud-c"></div>
+      </div>
+
+      <div class="hero-scene" data-parallax>
+        <img
+          class="hero-art"
+          src="assets/hero-landscape.png"
+          alt="A lush fantasy valley with a castle, village, windmill, and a young adventurer beside a sprout creature."
+          draggable="false"
+        />
+        <div class="balloon" aria-hidden="true"></div>
+        <div class="vignette" aria-hidden="true"></div>
+        <canvas class="motes" id="motes" aria-hidden="true"></canvas>
+      </div>
+
+      <div class="hud">
+        <header class="brand-lockup">
+          <div class="ornament" aria-hidden="true">✦</div>
+          <h1 class="brand">The World</h1>
+          <p class="tagline"><span></span>A Place of Wonder<span></span></p>
+          <div class="twinkles" aria-hidden="true">
+            <i></i><i></i><i></i><i></i><i></i>
+          </div>
+        </header>
+
+        <nav class="menu" aria-label="Main">
+          <button class="btn btn-primary" data-action="start" type="button">
+            <span>Start Adventure</span>
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                fill="currentColor"
+                d="M12 2l2.4 7.2H22l-6 4.4 2.3 7.1L12 16.8 5.7 20.7 8 13.6 2 9.2h7.6z"
+              />
+            </svg>
+          </button>
+          <button class="btn btn-cream" data-action="create" type="button">
+            <span>Create Account</span>
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                fill="currentColor"
+                d="M12 12a4.5 4.5 0 1 0-4.5-4.5A4.5 4.5 0 0 0 12 12zm0 2.25c-4 0-7.5 2-7.5 4.5V21h15v-2.25c0-2.5-3.5-4.5-7.5-4.5z"
+              />
+            </svg>
+          </button>
+          <button class="btn btn-cream" data-action="login" type="button">
+            <span>Log In</span>
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                fill="currentColor"
+                d="M17 8h-1V6a4 4 0 0 0-8 0v2H7a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2zm-7-2a2 2 0 0 1 4 0v2h-4zm5 10.7a1.5 1.5 0 1 1-1.5-1.5 1.5 1.5 0 0 1 1.5 1.5z"
+              />
+            </svg>
+          </button>
+          <button class="btn btn-cream" data-action="options" type="button">
+            <span>Options</span>
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                fill="currentColor"
+                d="M19.14 12.94a7.3 7.3 0 0 0 .05-.94 7.3 7.3 0 0 0-.05-.94l2.03-1.58a.5.5 0 0 0 .12-.64l-1.92-3.32a.5.5 0 0 0-.6-.22l-2.39.96a7.1 7.1 0 0 0-1.63-.94l-.36-2.54a.5.5 0 0 0-.5-.42h-3.84a.5.5 0 0 0-.5.42l-.36 2.54c-.58.23-1.12.54-1.63.94l-2.39-.96a.5.5 0 0 0-.6.22L2.76 8.84a.5.5 0 0 0 .12.64l2.03 1.58c-.03.31-.05.62-.05.94s.02.63.05.94L2.88 14.5a.5.5 0 0 0-.12.64l1.92 3.32a.5.5 0 0 0 .6.22l2.39-.96c.5.4 1.05.71 1.63.94l.36 2.54a.5.5 0 0 0 .5.42h3.84a.5.5 0 0 0 .5-.42l.36-2.54c.58-.23 1.12-.54 1.63-.94l2.39.96a.5.5 0 0 0 .6-.22l1.92-3.32a.5.5 0 0 0-.12-.64zM12 15.5A3.5 3.5 0 1 1 15.5 12 3.5 3.5 0 0 1 12 15.5z"
+              />
+            </svg>
+          </button>
+          <button class="btn btn-about" data-action="about" type="button">
+            <span>What is The World?</span>
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                fill="currentColor"
+                d="M6 2h9l5 5v13a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm8 1.5V8h4.5zM8 11h8v1.5H8zm0 3.5h8V16H8zm0 3.5h5V21H8z"
+              />
+            </svg>
+          </button>
+        </nav>
+      </div>
+    </div>
+
+    <div class="modal-root" id="modal-root" hidden>
+      <div class="modal-backdrop" data-close></div>
+      <div
+        class="modal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modal-title"
+        tabindex="-1"
+      >
+        <button class="modal-close" type="button" data-close aria-label="Close">
+          ×
+        </button>
+        <div class="modal-body" id="modal-body"></div>
+      </div>
+    </div>
+
+    <template id="tpl-start">
+      <h2 id="modal-title">Start Adventure</h2>
+      <p class="lead">
+        Choose a path into The World. Your companions, quests, and discoveries
+        begin here.
+      </p>
+      <form class="form" data-form="start">
+        <label>
+          Traveler name
+          <input name="name" type="text" required maxlength="24" placeholder="e.g. Mossbright" />
+        </label>
+        <label>
+          Starting region
+          <select name="region" required>
+            <option value="meadow">Flowering Meadows</option>
+            <option value="harbor">River Harbor</option>
+            <option value="castle">Castle Reach</option>
+            <option value="windmill">Windmill Cliffs</option>
+          </select>
+        </label>
+        <button class="btn btn-primary form-submit" type="submit">
+          Enter The World
+        </button>
+      </form>
+    </template>
+
+    <template id="tpl-create">
+      <h2 id="modal-title">Create Account</h2>
+      <p class="lead">Claim a home in The World — free to begin.</p>
+      <form class="form" data-form="create">
+        <label>
+          Email
+          <input name="email" type="email" required placeholder="you@example.com" />
+        </label>
+        <label>
+          Username
+          <input name="username" type="text" required minlength="3" maxlength="20" />
+        </label>
+        <label>
+          Password
+          <input name="password" type="password" required minlength="8" />
+        </label>
+        <button class="btn btn-primary form-submit" type="submit">
+          Create Account
+        </button>
+      </form>
+    </template>
+
+    <template id="tpl-login">
+      <h2 id="modal-title">Log In</h2>
+      <p class="lead">Welcome back, traveler.</p>
+      <form class="form" data-form="login">
+        <label>
+          Email or username
+          <input name="identity" type="text" required />
+        </label>
+        <label>
+          Password
+          <input name="password" type="password" required />
+        </label>
+        <button class="btn btn-primary form-submit" type="submit">Log In</button>
+      </form>
+    </template>
+
+    <template id="tpl-options">
+      <h2 id="modal-title">Options</h2>
+      <p class="lead">Tune the feel of your visit.</p>
+      <form class="form options-form" data-form="options">
+        <label class="toggle">
+          <input type="checkbox" name="music" checked />
+          Soft ambient music
+        </label>
+        <label class="toggle">
+          <input type="checkbox" name="sfx" checked />
+          Interface sounds
+        </label>
+        <label class="toggle">
+          <input type="checkbox" name="motion" checked />
+          Subtle scene motion
+        </label>
+        <label>
+          Text size
+          <select name="textSize">
+            <option value="md">Comfortable</option>
+            <option value="lg">Large</option>
+            <option value="sm">Compact</option>
+          </select>
+        </label>
+        <button class="btn btn-primary form-submit" type="submit">
+          Save Options
+        </button>
+      </form>
+    </template>
+
+    <template id="tpl-about">
+      <h2 id="modal-title">What is The World?</h2>
+      <p class="lead">
+        The World is a mystical online adventure — part creature companion,
+        part questing journey. Raise friends, explore painted lands, trade
+        stories, and grow into legends of your own making.
+      </p>
+      <ul class="about-list">
+        <li>Befriend whimsical creatures and care for them in your home.</li>
+        <li>Wander villages, cliffs, and castle towns on daily quests.</li>
+        <li>Meet other travelers, share finds, and return whenever you like.</li>
+      </ul>
+      <button class="btn btn-primary form-submit" type="button" data-action="create">
+        Begin Your Visit
+      </button>
+    </template>
+
+    <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
