@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --moss: #5f7a45;
+  --moss-deep: #4a6335;
+  --cream: #f3e6cf;
+  --cream-edge: #e4d2b0;
+  --ink: #3a2c22;
+  --ink-soft: #5c4636;
+  --title: #243a62;
+  --gold: #d4a84b;
+  --sky: #8fb8d8;
+  --about: #4a3a5c;
+  --shadow: 0 10px 28px rgba(40, 28, 18, 0.28);
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  color: var(--ink);
+  background:
+    radial-gradient(ellipse 80% 50% at 50% -10%, rgba(255, 250, 240, 0.55), transparent 60%),
+    linear-gradient(180deg, #9ec4df 0%, #c5d6b8 45%, #e8d7b8 100%);
+  font-family: var(--font-serif), "Source Serif 4", Georgia, serif;
+}
+
+.font-display {
+  font-family: var(--font-display), "Cormorant Garamond", Georgia, serif;
+}
+
+.font-script {
+  font-family: var(--font-script), "Great Vibes", cursive;
+}
+
+html[data-text-size="large"] body {
+  font-size: 18px;
+}
+
+html[data-contrast="high"] {
+  --ink: #1a120c;
+  --cream: #fff8ea;
+  --cream-edge: #cbb892;
+}
+
+@layer components {
+  .btn-primary {
+    @apply rounded-full bg-[var(--moss)] px-4 py-2 font-medium text-[var(--cream)] shadow transition hover:bg-[var(--moss-deep)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--gold)];
+  }
+  .btn-secondary {
+    @apply rounded-full border border-[var(--cream-edge)] bg-[rgba(255,248,235,0.85)] px-4 py-2 text-[var(--ink)] shadow-sm transition hover:bg-[var(--cream)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--gold)];
+  }
+  .btn-ghost {
+    @apply rounded-full px-3 py-1.5 text-[var(--ink-soft)] transition hover:bg-[rgba(255,248,235,0.6)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--gold)];
+  }
+}
+
+.reduce-motion *,
+.reduce-motion *::before,
+.reduce-motion *::after {
+  animation: none !important;
+  transition: none !important;
+}
+
+::selection {
+  background: rgba(212, 168, 75, 0.35);
+}

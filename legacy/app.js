@@ -1,6 +1,9 @@
 (() => {
   const world = document.getElementById("world");
   const scene = document.querySelector("[data-parallax]");
+  const heroArt = document.querySelector(".hero-art");
+  const balloon = document.querySelector(".balloon");
+  const balloonCover = document.querySelector(".balloon-cover");
   const modalRoot = document.getElementById("modal-root");
   const modalBody = document.getElementById("modal-body");
   const modal = modalRoot.querySelector(".modal");
@@ -8,14 +11,20 @@
   const canvas = document.getElementById("motes");
   const ctx = canvas.getContext("2d");
 
-  const options = loadOptions();
-  applyOptions(options);
+  // Painted balloon bounds in hero-landscape.png (natural pixels)
+  const BALLOON_IN_ART = { x: 1328, y: 78, w: 128, h: 190 };
 
   let toastTimer = 0;
   let lastFocus = null;
   let motes = [];
   let raf = 0;
-  let motionEnabled = options.motion !== false;
+  // Declared before applyOptions — assigning inside that helper must not hit the TDZ
+  let motionEnabled = true;
+
+  const options = loadOptions();
+  // Motion defaults ON unless the user saved it off in Options
+  if (options.motion === undefined) options.motion = true;
+  applyOptions(options);
 
   function loadOptions() {
     try {
@@ -30,9 +39,10 @@
   }
 
   function applyOptions(opts) {
-    document.documentElement.dataset.textSize = opts.textSize || "md";
-    document.body.classList.toggle("reduce-motion", opts.motion === false);
     motionEnabled = opts.motion !== false;
+    document.documentElement.dataset.textSize = opts.textSize || "md";
+    document.body.classList.toggle("reduce-motion", !motionEnabled);
+    document.body.classList.toggle("motion-on", motionEnabled);
     if (opts.textSize === "lg") {
       document.documentElement.style.fontSize = "18px";
     } else if (opts.textSize === "sm") {
@@ -175,7 +185,8 @@
     currentX += (targetX - currentX) * 0.06;
     currentY += (targetY - currentY) * 0.06;
     if (motionEnabled) {
-      scene.style.transform = `translate3d(${currentX}px, ${currentY}px, 0) scale(1.04)`;
+      // Translate only — avoid scale zoom that would crop characters/sign
+      scene.style.transform = `translate3d(${currentX}px, ${currentY}px, 0)`;
     } else {
       scene.style.transform = "none";
     }
@@ -254,20 +265,66 @@
   }
 
   window.addEventListener("resize", () => {
+    positionBalloon();
     if (!motionEnabled) return;
     resizeCanvas();
     spawnMotes();
   });
 
-  if (motionEnabled && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-    startMotes();
-  } else {
-    document.body.classList.add("reduce-motion");
-    motionEnabled = false;
+  // Keep the floating balloon aligned to the painted one under object-fit: contain
+  function positionBalloon() {
+    if (!heroArt || !balloon || !balloonCover) return;
+    const natW = heroArt.naturalWidth || 1536;
+    const natH = heroArt.naturalHeight || 1024;
+    const boxW = heroArt.clientWidth;
+    const boxH = heroArt.clientHeight;
+    if (!boxW || !boxH) return false;
+
+    const scale = Math.min(boxW / natW, boxH / natH);
+    const renderedW = natW * scale;
+    const renderedH = natH * scale;
+    const offsetX = (boxW - renderedW) * 0.5;
+    const offsetY = (boxH - renderedH) * 0.5;
+
+    const left = offsetX + BALLOON_IN_ART.x * scale;
+    const top = offsetY + BALLOON_IN_ART.y * scale;
+    const width = BALLOON_IN_ART.w * scale;
+    const height = BALLOON_IN_ART.h * scale;
+
+    balloon.style.left = `${left}px`;
+    balloon.style.top = `${top}px`;
+    balloon.style.width = `${width}px`;
+
+    const pad = Math.max(12, width * 0.28);
+    balloonCover.style.left = `${left - pad}px`;
+    balloonCover.style.top = `${top - pad * 0.7}px`;
+    balloonCover.style.width = `${width + pad * 2}px`;
+    balloonCover.style.height = `${height + pad * 1.55}px`;
+    return true;
   }
+
+  if (heroArt) {
+    if (heroArt.complete) positionBalloon();
+    else heroArt.addEventListener("load", positionBalloon, { once: true });
+    if (typeof ResizeObserver !== "undefined") {
+      new ResizeObserver(() => positionBalloon()).observe(heroArt);
+    }
+  }
+
+  // Respect OS reduced-motion only as an initial default when the user
+  // has never saved Options; an explicit Options choice always wins.
+  const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (localStorage.getItem("the-world-options") === null && prefersReduced) {
+    options.motion = false;
+    applyOptions(options);
+  }
+
+  if (motionEnabled) startMotes();
+  else stopMotes();
 
   // Soft entrance for brand after paint
   requestAnimationFrame(() => {
     world.classList.add("ready");
+    positionBalloon();
   });
 })();

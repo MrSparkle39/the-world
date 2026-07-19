@@ -1,0 +1,1777 @@
+--- PAGE 1 ---
+THE WORLD  |  MASTER DESIGN BIBLE
+Page 1
+THE WORLD
+Master Design Bible
+A browser-first magical universe for curiosity, adventure and kindness
+North star
+Create the place a child cannot wait to return to - a magical world first, with good values woven quietly into 
+the adventure.
+MASTER EDITION 1.0  |  JULY 2026
+--- PAGE 2 ---
+THE WORLD  |  MASTER DESIGN BIBLE
+Page 2
+DOCUMENT GUIDE
+How to Use This Bible
+The permanent source of truth for world design, production decisions and future phase 
+briefs.
+This master PDF defines what The World is, what it is not, how its systems fit together, and the order in 
+which it should be built. It is intentionally broader than a normal game design document. It combines 
+creative direction, product strategy, child-safety principles, technical architecture, content-production 
+rules and a phased roadmap.
+Cursor should use this document as context, but should receive a separate detailed PDF for each 
+production phase. The phase PDFs will expand every screen, state, interaction, image prompt, data 
+requirement and acceptance test. The master prevents those later prompts from drifting away from the 
+original vision.
+• For creative work: Use the world principles, art direction, lore rules and character-writing standards.
+• For coding work: Use the technical architecture, reusable content model, state rules and phase gates.
+• For image generation: Use the visual consistency contract and asset prompt templates before generating 
+any scene.
+• For scope decisions: If a requested feature conflicts with the player promise or child-safety rules, the bible 
+wins.
+• For future phase PDFs: Use the standard phase-document structure in the final appendix.
+Important
+The World must never be described publicly as a “Neopets clone.” Its structure may use illustrated click-
+through locations, but its identity is a cosmic storybook universe built around wonder, kindness, secrets, 
+companions and optional real-world family participation.
+--- PAGE 3 ---
+THE WORLD  |  MASTER DESIGN BIBLE
+Page 3
+NAVIGATION
+Contents
+The master is organised from vision to systems to execution.
+Section Focus
+1 Vision and player promise
+2 Audience, values and safety
+3 The universe and its places
+4 Core gameplay and progression
+5 Family and real-world systems
+6 Art, interface and content production
+7 Technology, data and operations
+8 Master production roadmap
+9 Phase specifications 0-11
+10 Cursor production contract and appendices
+Future detailed phase PDFs should keep the same terminology used here. Avoid renaming major systems 
+casually: Explorer, Companion, Crossroads, Home Quests, Starlight, The Between and Heartstar are 
+working terms that provide internal consistency until formally replaced.
+--- PAGE 4 ---
+THE WORLD  |  MASTER DESIGN BIBLE
+Page 4
+SECTION 01
+Vision and Player Promise
+Define the feeling before defining the features.
+--- PAGE 5 ---
+THE WORLD  |  MASTER DESIGN BIBLE
+Page 5
+CORE CONCEPT
+The One-Sentence Concept
+The World is a vast magical universe that respects children, rewards curiosity and 
+quietly encourages them to become good people.
+Players become Wayfinders: young explorers who can see paths between strange realms that most 
+inhabitants cannot. They travel with an original magical companion, build a personal home, collect 
+meaningful objects, play games, help memorable characters and slowly uncover a cosmic mystery that is 
+never completely explained.
+The experience is browser-first and primarily built from richly illustrated clickable locations. Some pictures 
+can be “entered” as mini-games, battles or small walkable areas. This keeps the world visually rich and 
+expandable without requiring one enormous continuous 3D map.
+Emotional benchmark
+The player should feel the way a child feels when a story suddenly opens a door into another reality: safe 
+enough to stay, curious enough to keep clicking, and certain that something wonderful might be hidden just 
+beyond the obvious path.
+What it is
+• A magical place to escape into for minutes or hours
+• A storybook universe with games and persistent 
+progress
+• A private, low-pressure experience without open 
+chat
+• A world that changes with seasons, events and 
+discoveries
+• A family-positive game without becoming a 
+parenting app
+What it is not
+• A classroom wearing fantasy clothes
+• A pay-to-win economy
+• An open social network for children
+• A grim combat MMO
+• A flat collection of unrelated mini-games
+• A direct copy of a nostalgic browser game
+--- PAGE 6 ---
+THE WORLD  |  MASTER DESIGN BIBLE
+Page 6
+NORTH-STAR RULES
+The Player Promise
+Every major decision should preserve these six promises.
+Wonder before optimisation
+The world should contain things that exist because they are delightful, not because they maximise 
+engagement.
+Magic before education
+Values and habits are embedded in stories and choices. The interface must never feel like homework.
+Safety without sterility
+Remove open chat and harmful systems, but do not make the world bland, over-explained or infantilising.
+Curiosity is rewarded
+Odd clicks, return visits, patient observation and unusual choices should sometimes reveal something 
+meaningful.
+Free players belong
+The main adventure, stories, games and core progression remain genuinely accessible without payment.
+The world remembers
+NPC reactions, small environmental changes and long-term collections should make a player feel that their 
+journey matters.
+--- PAGE 7 ---
+THE WORLD  |  MASTER DESIGN BIBLE
+Page 7
+EMOTIONAL DESIGN
+The Desired Feeling
+The experience should feel more like entering a beloved book than opening an app.
+• On first visit: “I want to go down there.”
+• After ten minutes: “There is more here than I expected.”
+• After the first session: “I want to see what happens tomorrow.”
+• After one month: “This is my explorer, my companion and my little corner of the world.”
+• After one year: “I remember when that door was still sealed.”
+• As an adult remembering it: “That place genuinely mattered to me.”
+The strongest competitor is not another game. It is every short-form feed, noisy multiplayer lobby and 
+disposable mobile reward loop. The World differentiates itself by being calm enough to inhabit, deep 
+enough to explore and strange enough to remember.
+Design test
+When evaluating a feature, ask: does this deepen wonder, personal ownership, meaningful progress or safe 
+curiosity? If it only increases clicks or monetisation pressure, it probably does not belong.
+--- PAGE 8 ---
+THE WORLD  |  MASTER DESIGN BIBLE
+Page 8
+DECISION FRAMEWORK
+Core Product Principles
+A compact operating constitution for design and development.
+Principle Practical implication
+Illustrated depth over empty scale Fifty highly interactive scenes are more valuable than a 
+huge walkable world filled with nothing.
+Small stories over constant apocalypse Helping a baker, returning a letter or comforting a 
+frightened creature can matter more than saving the 
+universe every week.
+No humiliation loops Failure should create humour, learning or another path - 
+not public embarrassment or loss designed to provoke 
+spending.
+Collecting with meaning Items should connect to places, characters, events or 
+memories rather than existing as meaningless numerical 
+clutter.
+Optional family connection Parents can participate privately through approvals and 
+celebrations, but the child’s fantasy experience remains 
+independent.
+Expandable by templates Every town, shop, NPC, quest and event should be 
+created from reusable systems so the world can grow for 
+years.
+--- PAGE 9 ---
+THE WORLD  |  MASTER DESIGN BIBLE
+Page 9
+SECTION 02
+Audience, Values and Safety
+Respect children without underestimating them.
+--- PAGE 10 ---
+THE WORLD  |  MASTER DESIGN BIBLE
+Page 10
+PLAYER MODEL
+Audience and Age Adaptation
+One world, with writing and guidance adjusted by broad age bracket.
+Players choose a broad path rather than entering an exact birthday. The underlying locations, major 
+stories and rewards remain shared so siblings can talk about the same world. Dialogue complexity, hints, 
+reading length, emotional nuance and guardian controls adapt behind the scenes.
+Age bracket In-world name Adaptation
+6-8 Bright Path Shorter dialogue, clearer choices, 
+visible guidance, simple emotional 
+language, forgiving games.
+9-12 Curious Path More mystery, layered characters, 
+indirect clues, moderate reading, 
+greater exploration freedom.
+13-16 Far Path Longer stories, thoughtful dilemmas, 
+subtle themes, deeper lore, more 
+complex strategy and economy.
+Shared-world rule
+Age adaptation must not create a “baby version” and a “real version.” All paths should feel dignified, magical 
+and complete. Older writing is more nuanced, not more violent or cynical.
+• Do not collect unnecessary personal data.
+• Never ask a child to publicly display age, school, location or legal name.
+• Parents should be able to revise the bracket without deleting progress.
+• Generated dialogue must be curated; do not dynamically improvise sensitive advice to children.
+--- PAGE 11 ---
+THE WORLD  |  MASTER DESIGN BIBLE
+Page 11
+NARRATIVE PHILOSOPHY
+Values Without Lectures
+The child should experience the consequence of kindness, not receive a morality score.
+The World can teach empathy, honesty, courage, patience, boundaries, inclusion, critical thinking and care 
+for others. These values should emerge from satisfying stories, interesting choices and characters who 
+feel real. The game must not pause to explain that the child has “demonstrated empathy.”
+Good implementation
+• A lonely NPC remembers that the player returned
+• An angry creature can be calmed by noticing what 
+frightened it
+• Admitting a mistake opens a repair quest
+• A disabled character is competent and has their 
+own goals
+• A rumour changes depending on who repeats it
+• Helping without a reward sometimes creates a 
+later surprise
+Bad implementation
+• Pop-up: “Correct! Kindness +10”
+• Every quest ends in a lesson summary
+• Characters exist only to model a moral
+• The compassionate option is always obvious and 
+superior
+• Real-world advice is generated without review
+• Children lose core access for not completing good 
+habits
+Writing rule
+The story must still be entertaining if the player never consciously identifies the lesson.
+--- PAGE 12 ---
+THE WORLD  |  MASTER DESIGN BIBLE
+Page 12
+SOCIAL SAFETY
+No Open Chat
+A deliberate creative advantage, not merely a missing feature.
+There will be no unrestricted player-to-player chat, private messages or public comments. This removes 
+major pathways for bullying, grooming, harassment, scams and social comparison. It also protects the 
+central fantasy: The World is a place a child can enter without being judged by strangers.
+• Players can still feel part of something through anonymous global event totals.
+• Preset reactions or emotes may be considered later only in tightly bounded contexts.
+• Leaderboards should default to private, friends-and-family or anonymised placement rather than public 
+usernames.
+• Trading, if introduced, should use protected systems with hard value limits and no direct messaging.
+• The game should never pressure children to recruit friends in exchange for rewards.
+Community without exposure
+“Wayfinders have lit 742,391 lanterns” can create shared excitement without exposing a child to anyone else.
+--- PAGE 13 ---
+THE WORLD  |  MASTER DESIGN BIBLE
+Page 13
+NON-NEGOTIABLES
+Child Safety and Privacy Baseline
+Safety requirements must shape architecture from the beginning.
+Area Master requirement
+Identity Use nicknames; never require public real names, 
+schools, precise locations or profile photos.
+Guardian accounts Separate authentication and permissions. A child cannot 
+access guardian email, approvals or payment controls.
+Sensitive topics Use authored and reviewed content. Do not use 
+unrestricted AI conversation for health, abuse, 
+relationships or crisis advice.
+Purchases Guardian-gated, transparent pricing, no loot boxes, no 
+gambling-like mechanics and no countdown pressure 
+targeted at children.
+Data Collect the minimum necessary, define retention rules, 
+encrypt sensitive data and maintain auditable consent 
+records.
+Reporting Provide parent support and content-reporting channels 
+even without player chat.
+Analytics Avoid invasive behavioural profiling. Use product 
+analytics for safety, reliability and broad improvement.
+Deletion Guardians can export or delete associated data through 
+a clear process.
+Before public release, obtain specialised legal and privacy review for every country in which children can 
+register. The build should be designed for compliance, but this bible is not legal advice.
+--- PAGE 14 ---
+THE WORLD  |  MASTER DESIGN BIBLE
+Page 14
+SECTION 03
+The Universe and Its Places
+Fantasy on the surface; cosmic mystery underneath.
+--- PAGE 15 ---
+THE WORLD  |  MASTER DESIGN BIBLE
+Page 15
+LORE FOUNDATION
+The Hidden Cosmology
+The World can be interpreted as a mind, a living system, a galaxy or something 
+stranger - without confirming any one answer.
+Conceptual cosmology. This is a lore relationship map, not the final player-facing world map.
+Children encounter magical realms connected through The Between. Older players may notice recurring 
+shapes and language resembling neurons, constellations, memories, dreams, black holes and living 
+systems. The design team knows the underlying pattern, but the game never delivers a final “you were 
+inside a brain” reveal.
+Mystery rule
+The hidden theme should enrich every place without becoming a puzzle that invalidates the fantasy world. 
+Backwards Town must still be a wonderful town even if it also represents memory, time or reversed signals.
+--- PAGE 16 ---
+THE WORLD  |  MASTER DESIGN BIBLE
+Page 16
+WORKING LORE
+The Between, the Heartstar and the Crossroads
+Three concepts that hold the universe together.
+Concept Player-facing meaning Deeper design meaning
+The Between The luminous space and paths 
+connecting realms.
+A visual language that can resemble 
+space, thought, dreams or biological 
+networks.
+The Heartstar A distant warm light seen from many 
+worlds. Nobody agrees what it is.
+The recurring centre of the hidden 
+cosmology; it may suggest 
+consciousness, creation or a cosmic 
+source.
+The Crossroads The safe hub where Wayfinders 
+arrive and paths open.
+The practical account hub, player 
+home district, travel interface and 
+update anchor.
+Wayfinders Explorers who notice paths others 
+miss.
+The player role: curiosity rather than 
+destiny grants access.
+Echoes Objects, creatures or places carrying 
+pieces of other realms.
+A flexible explanation for 
+collectibles, memories, seasonal 
+remnants and cross-world mysteries.
+These are working terms, not locked marketing names. Any renaming must preserve the conceptual 
+relationships.
+--- PAGE 17 ---
+THE WORLD  |  MASTER DESIGN BIBLE
+Page 17
+EXPERIENCE MODEL
+World Structure
+The illustrated page system creates depth through nested places.
+A realm is not a single background. It is a network of illustrated scenes, interiors, characters, activities and 
+state changes. A single town overview might expose twelve hotspots. Each hotspot can branch into an 
+interior, dialogue scene, shop, quest, game or secret. This makes the world feel much larger than its code 
+footprint.
+• Realm map: A large illustrated destination or constellation map.
+• Location scene: A town, forest, shoreline, station or neighbourhood with clickable hotspots.
+• Interior scene: A bakery, library, workshop, home, cave or hidden room.
+• Interaction layer: Dialogue, shop, inventory, puzzle, battle or game.
+• State variation: Day/night, weather, completed quests, seasons, repairs and hidden discoveries.
+• Enterable picture: Occasional mini-game or walkable micro-zone that makes a scene feel physically 
+explorable.
+--- PAGE 18 ---
+THE WORLD  |  MASTER DESIGN BIBLE
+Page 18
+WORLD PLANNING
+Initial Realm Portfolio
+A balanced world needs places with strong rules, moods and gameplay identities.
+Realm Signature rule Gameplay role
+The Crossroads Warm hub between worlds Arrival, home, map, festivals, recurring 
+NPCs
+Backwards Town Everything follows a playful reverse logic Comedy, first quests, Rewind Arcade, 
+time mysteries
+Whispering Woods The forest remembers voices and 
+unfinished songs
+Exploration, listening, hidden paths, 
+empathy stories
+Library of Forgotten Things Lost ideas, objects and memories wait to 
+be found
+Collections, lore, puzzles, unfinished 
+stories
+Clockmaker’s Hollow Time is repaired, borrowed and 
+occasionally misplaced
+Crafting, timers, schedules, mechanical 
+creatures
+The Sleepy Sea An ocean suspended beneath a night sky Fishing, dreams, calm games, floating 
+islands
+Lantern Valley Lights appear for acts of courage and 
+care
+Seasonal events, shared goals, gentle 
+mysteries
+Umbrella Desert Rain falls upward and shade is valuable Resource puzzles, weather mechanics, 
+comic NPCs
+Moss Giant’s Garden A civilisation lives across a sleeping giant Gardening, scale, creature care, 
+environmental stories
+Realm test
+A child should be able to describe each major realm in one memorable sentence. “The town where everything 
+happens backwards” is stronger than “the medieval village area.”
+--- PAGE 19 ---
+THE WORLD  |  MASTER DESIGN BIBLE
+Page 19
+FLAGSHIP PLACE
+Backwards Town
+The first signature realm and the creative benchmark for future locations.
+Backwards Town is funny immediately, but it should not be a one-joke location. Its reverse logic influences 
+architecture, schedules, quests, games, language and deeper mysteries. The town is welcoming and 
+slightly bewildering. Residents treat its rules as completely ordinary.
+Visible magic
+• Visitors exit before they enter
+• Dessert is served first
+• The post office delivers yesterday’s mail tomorrow
+• The bakery unbakes bread
+• Shop shelves refill when items are returned
+• The mayor begins speeches with “goodbye”
+• The arcade celebrates low scores in one game and 
+reversed time in another
+Deeper story possibilities
+• A resident is afraid of moving forward
+• A broken clock remembers tomorrow
+• A letter arrives before it is written
+• A child learns that mistakes can be repaired 
+without being erased
+• An old road only appears when walked backwards
+• The town may sit near a fold in The Between
+Tone
+Clever, warm and strange. Never use backwards logic to make controls frustrating or text unreadable. The 
+joke belongs in the world, not in hostile UX.
+--- PAGE 20 ---
+THE WORLD  |  MASTER DESIGN BIBLE
+Page 20
+SECTION 04
+Core Gameplay and 
+Progression
+Give the player many reasons to care, without making everything a grind.
+--- PAGE 21 ---
+THE WORLD  |  MASTER DESIGN BIBLE
+Page 21
+CORE LOOP
+The Daily Wonder Loop
+A comfortable routine with room for surprise.
+A session may last five minutes or several hours. The player should be able to collect a gift, check on their 
+companion and leave, or follow a chain of discoveries across several realms. There is no energy system 
+forcing the player to stop and no punishment for taking a break.
+• The homepage or Crossroads visibly reflects current events and weather.
+• At least one returning NPC has fresh dialogue or a small state change.
+• A short activity provides reliable progress.
+• A mystery or rare occurrence provides uncertainty and wonder.
+• The player leaves with a clear but non-urgent reason to return.
+--- PAGE 22 ---
+THE WORLD  |  MASTER DESIGN BIBLE
+Page 22
+RETENTION MODEL
+Long-Term Progression
+Players should build a personal history, not merely a larger number.
+Progress layer Examples Why it matters
+Explorer Outfits, tools, titles, learned abilities Personal identity and expression.
+Companion Trust, traits, appearance changes, 
+abilities
+Emotional bond and long-term 
+uniqueness.
+Home Rooms, garden, displays, trophies, music A visible private record of the journey.
+Collections Books, stars, recipes, creatures, oddities Goals for many play styles.
+Relationships NPC memory, unlocked dialogue, 
+invitations
+The world feels responsive.
+World state Repaired locations, opened doors, 
+seasonal history
+Progress changes places, not only menus.
+Skills Fishing, crafting, gardening, navigation, 
+combat
+Mastery and varied play.
+Lore Clues, maps, Echoes, theories Long-term mystery and discussion 
+without chat.
+Progression rule
+A player returning after six months should feel welcomed, not punished by a mountain of expired obligations.
+--- PAGE 23 ---
+THE WORLD  |  MASTER DESIGN BIBLE
+Page 23
+NARRATIVE SYSTEM
+Quest and Story Model
+Stories are built from authored nodes and world state, not unrestricted AI 
+improvisation.
+Quests should range from two-minute interactions to multi-week mysteries. Each quest stores 
+prerequisites, age-adapted dialogue, choices, state changes, rewards, revisits and optional branches. AI 
+may assist writing during production, but final child-facing dialogue must be reviewed and stored as 
+controlled content.
+Quest type Typical length Example
+Tiny kindness 2-5 minutes Return a dropped parcel without 
+being asked.
+Character chapter 10-25 minutes Help the Backwards Baker stop 
+trying to erase every imperfect loaf.
+Realm mystery Several sessions Discover why tomorrow’s mail has 
+stopped arriving.
+Seasonal story 1-4 weeks Relight Lantern Valley before the 
+longest night.
+Long lore arc Months or years Trace recurring Heartstar symbols 
+across different realms.
+Home Quest bridge Real-world task plus short game 
+scene
+Help at home, then receive materials 
+to repair a tiny in-world bridge.
+• Avoid binary saint/monster choices.
+• Let players repair mistakes.
+• Use consequences as story variation, not permanent account damage.
+• Never create an irreversible choice involving sensitive personal themes for a child.
+--- PAGE 24 ---
+THE WORLD  |  MASTER DESIGN BIBLE
+Page 24
+COMBAT DIRECTION
+Battle System
+AdventureQuest-style clarity, modern presentation and multiple ways to resolve 
+conflict.
+Combat is theatrical and turn-based, launched from illustrated story pages. It should be easy to 
+understand on touchscreens and satisfying in short sessions. Battles are not the moral centre of the world, 
+but they provide strategy, spectacle and progression.
+Player action Purpose
+Strike Reliable basic action; visually adapted to equipped tool 
+or class.
+Ability Character skill with cooldown or resource cost.
+Companion action Support, distraction, protection, healing or 
+environmental interaction.
+Item Use food, potion, tool or quest object.
+Defend Reduce harm and set up a response.
+Observe Reveal a weakness, emotion, clue or alternative 
+resolution.
+Kindness / cleverness option Context-specific action earned by paying attention; 
+never a generic “win button.”
+Conflict rule
+Not every opponent is evil, not every battle ends in defeat, and no creature should be killed for comic reward. 
+Enemies can retreat, calm down, change form, apologise, be repaired or become allies.
+--- PAGE 25 ---
+THE WORLD  |  MASTER DESIGN BIBLE
+Page 25
+GAME PLATFORM
+Arcade and Mini-Games
+Original games inspired by classic genres, connected to the wider world.
+The arcade is not a separate content dump. Every mini-game belongs to a place, character or story. 
+Scores award capped coins, collections, cosmetic unlocks or quest materials. The platform should support 
+keyboard, touch and gamepad where practical.
+Working title Core genre World connection
+Rewind Run Endless runner where time briefly 
+reverses
+Backwards Town
+Unbake! Fast sorting and timing game that 
+reconstructs ingredients
+Yesterday’s Bakery
+Lantern Lift Physics puzzle carrying lights through 
+rising wind
+Lantern Valley
+Moonlake Fishing Calm timing and collection game The Sleepy Sea
+Goblin Gold Rush Mine-cart route and risk game Forgotten Mines
+Potion Panic Recipe and pattern game A travelling alchemist
+Dragon Defender Accessible lane or tower defence A later battle realm
+Whisper Catcher Audio-visual memory game Whispering Woods
+• No direct clones of copyrighted levels, characters, music or art.
+• Build a reusable score, pause, reward, accessibility and input framework once.
+• A polished game with strong sound and animation is better than ten unfinished games.
+• Daily score rewards must be capped to protect the economy.
+--- PAGE 26 ---
+THE WORLD  |  MASTER DESIGN BIBLE
+Page 26
+HYBRID EXPLORATION
+Walkable Areas
+Use movement as a special mode, not the default structure.
+Approximately seventy percent of the world should remain illustrated click-through scenes, twenty percent 
+mini-games and battles, and ten percent small walkable areas. This ratio preserves the scale and 
+storytelling advantage while making selected pictures feel enterable.
+Good walkable zones
+• A maze-like forest with hidden trails
+• A mine where movement is part of a puzzle
+• A festival square with stalls
+• A small dungeon or ruin
+• A shoreline used for fishing and collecting
+• A dream sequence where physics changes
+Avoid
+• Rebuilding every town as a tile map
+• Long empty roads between useful places
+• Movement added only because games “should” 
+have walking
+• Complex real-time multiplayer presence
+• Touch controls that obscure the whole phone 
+screen
+• Making important accessibility content depend on 
+precise movement
+Reveal moment
+The first time a player clicks a scene and their explorer steps into it should feel like a genuine surprise.
+--- PAGE 27 ---
+THE WORLD  |  MASTER DESIGN BIBLE
+Page 27
+PERSISTENT RELATIONSHIP
+Companion System
+The emotional heart of the account, designed to become personal over time.
+Companions are not ordinary pets and should not resemble existing collectible-creature franchises. They 
+are small beings touched by The Between. Their appearance and abilities slowly respond to the player’s 
+choices, favourite activities, realms visited and relationship history.
+Layer Design direction
+Selection Choose from a small set of species or origins with 
+distinct silhouettes and personalities.
+Bond Built through regular care, shared quests and respectful 
+choices - not constant feeding meters.
+Traits Curious, cautious, playful, observant, brave, patient and 
+other non-ranked tendencies.
+Appearance Subtle growth: sprouts, markings, glow, fins, crystals, 
+feathers or star patterns.
+Abilities Battle support, finding clues, accessing small spaces, 
+calming creatures, gathering materials.
+Communication Expressive animation, sounds and authored short 
+dialogue where appropriate.
+Failure protection Companions never permanently leave, become sick from 
+absence or shame the child for not logging in.
+Uniqueness principle
+Two players choosing the same starter companion should be able to develop visibly different companions 
+after months of play.
+--- PAGE 28 ---
+THE WORLD  |  MASTER DESIGN BIBLE
+Page 28
+OWNERSHIP
+Explorer, Home and Collections
+Three surfaces where the player’s history becomes visible.
+Explorer identity
+• Nickname, broad age path and avatar style
+• Outfits earned from places and stories
+• Tools and ability loadouts
+• Private titles and achievements
+• Accessibility choices preserved across devices
+Player home
+• A room at the Crossroads
+• Display shelves for meaningful finds
+• Garden or tiny exterior space
+• Companion resting area
+• Music, wallpaper and seasonal decorations
+• Locked door hinting at a later mystery
+Collections should be presented as beautiful books, cabinets, maps and displays rather than spreadsheet-
+like completion lists. Examples include the Atlas of Impossible Places, Book of Unfinished Stories, Cabinet 
+of Tiny Wonders, Constellation Journal, Recipe Ledger and Creature Sketchbook.
+Collection rule
+A collection entry should tell the player where an item came from and why it matters. Rarity without story 
+quickly becomes clutter.
+--- PAGE 29 ---
+THE WORLD  |  MASTER DESIGN BIBLE
+Page 29
+SECTION 05
+Family and Real-World 
+Systems
+Connect home and game gently, privately and optionally.
+--- PAGE 30 ---
+THE WORLD  |  MASTER DESIGN BIBLE
+Page 30
+FAMILY FEATURE
+Home Quests
+Optional real-world actions can create small in-world bonuses after guardian approval.
+Home Quests may include helping set the table, putting away toys, reading, preparing a school bag, 
+feeding a pet, practising a routine or completing a custom family task. They must remain optional. A child 
+who never uses Home Quests still receives the complete magical adventure.
+• The child selects or accepts a task and marks it complete.
+• The guardian receives a private email or dashboard approval request.
+• The guardian can confirm, choose “not yet,” or send a short preset/custom encouraging message.
+• The reward is modest and capped: Starlight, coins, materials or a decorative progress item.
+• Custom tasks require guardian creation and cannot expose private text publicly.
+• Repeated tasks use cooldowns and weekly caps to prevent reward farming.
+Never do this
+Do not punish the child, lock story content, shame them, notify other players or create a public “good child” 
+score.
+--- PAGE 31 ---
+THE WORLD  |  MASTER DESIGN BIBLE
+Page 31
+PARENT SYSTEM
+Guardian Experience
+A separate practical portal that never breaks the child’s fantasy.
+Guardian capability Requirement
+Link account Secure invitation or code; child cannot see guardian 
+credentials.
+Approve Home Quests Fast email action plus full dashboard history.
+Create routines Optional recurring tasks with reward limits and age-
+appropriate labels.
+Purchase controls Disable purchases, require confirmation, set spending 
+limits and review history.
+Play reminders Optional gentle reminders, never forced logout during a 
+save-sensitive activity.
+Age path and accessibility Adjust reading path, motion, sound and support settings.
+Wish lists View child-selected real-world ideas only when explicitly 
+enabled.
+Privacy controls Export, unlink or request deletion of family data.
+Encouragement Send limited messages that appear as private notes 
+from home, clearly identified as guardian messages.
+Separation rule
+The guardian portal should look calm and trustworthy, but it should not reuse the child’s fantasy language so 
+heavily that approvals become confusing.
+--- PAGE 32 ---
+THE WORLD  |  MASTER DESIGN BIBLE
+Page 32
+OPTIONAL FAMILY UTILITY
+Seasonal Wish Lists
+A magical ritual can privately help families without turning the world into an 
+advertisement.
+During an enabled winter or birthday event, a child can visit a magical post office and create a list of 
+things they like. In-world items remain separate from real-world wishes. The guardian receives the real-
+world list privately. The child is never told that a purchase is guaranteed.
+• Guardians choose whether Christmas, another celebration, birthdays or no wish-list events are enabled.
+• The system supports typed wishes, broad categories and links added by the guardian - not unrestricted 
+external browsing by children.
+• No brand pays to influence the child’s list.
+• The child can revise the list; the guardian sees timestamps and changes.
+• After the season, the child-facing list becomes a memory page or is archived according to guardian 
+preference.
+• Marketing and store links must never be disguised as NPC recommendations.
+Tone example
+“The Winter Traveller reads every letter, but even magic cannot promise every wish.”
+--- PAGE 33 ---
+THE WORLD  |  MASTER DESIGN BIBLE
+Page 33
+LIVE WORLD
+Seasonal Events
+The world should visibly change, not merely display a banner.
+Event Season World effect
+First Rains Autumn Upward rain begins in the Umbrella 
+Desert; new plants appear 
+elsewhere.
+Longest Night Winter Players light lanterns across realms; 
+the Heartstar is unusually faint.
+Bloomwake Spring Paths grow overnight; companion 
+sprouts and gardens change.
+Sky Carnival Summer A travelling floating fair arrives with 
+games and strange prizes.
+Backwards Day Special Backwards Town temporarily 
+behaves normally and residents find 
+it alarming.
+Constellation Opening Lore event A new realm appears when 
+anonymous global discoveries reach 
+a threshold.
+• Homepage art, lighting, music and small animations change.
+• Existing NPCs receive event dialogue and outfits.
+• Temporary content should leave permanent memories, book entries or decorations.
+• Avoid fear-of-missing-out pressure and extremely short purchase windows.
+• Repeat events may evolve rather than reset identically.
+--- PAGE 34 ---
+THE WORLD  |  MASTER DESIGN BIBLE
+Page 34
+BUSINESS MODEL
+Economy and Monetisation
+Support the world without corrupting it.
+The game is predominantly free. Revenue can come from cosmetics, expanded personalisation, optional 
+membership conveniences, merchandise and guardian-approved purchases. Spending should express 
+affection for the world, not remove artificial pain.
+Allowed direction Examples
+Cosmetics Outfits, home themes, companion accessories, 
+animation packs and seasonal decoration sets.
+Account expansion Additional home rooms, extra outfit presets or additional 
+companion slots with clear limits.
+Optional membership Monthly cosmetic allowance, expanded storage, bonus 
+decorating tools and behind-the-scenes content.
+Merchandise Plush companions, books, art prints, cards and physical 
+collectibles.
+Supporter purchases One-off founder or patron cosmetics that do not convey 
+gameplay power.
+Guardian gifting Directly purchase a known item; no randomised loot.
+Prohibited Reason
+Loot boxes or paid random rewards Gambling-like pressure and poor transparency.
+Pay-to-win stats or exclusive story endings Undermines the shared world and free-player promise.
+Artificial energy sold for cash Turns playtime into monetised frustration.
+Child-targeted countdown pressure Exploits urgency and fear of missing out.
+Ads disguised as characters or quests Breaks trust and manipulates children.
+Public spending status Creates comparison and social pressure.
+--- PAGE 35 ---
+THE WORLD  |  MASTER DESIGN BIBLE
+Page 35
+SECTION 06
+Art, Interface and Content 
+Production
+Consistency is what separates a real world from a folder of AI images.
+--- PAGE 36 ---
+THE WORLD  |  MASTER DESIGN BIBLE
+Page 36
+ART BIBLE
+Visual Direction
+A richly illustrated storybook world with cinematic depth and gentle movement.
+Current homepage reference: atmosphere and quality target, not a final locked design.
+• Hand-painted storybook aesthetic combining gouache, watercolour texture and polished digital illustration.
+• Warm, natural light and layered depth rather than flat vector art.
+• Whimsical architecture with believable construction and coherent regional materials.
+• Original companion silhouettes and characters; avoid visual proximity to existing franchises.
+• Detailed scenes with calm negative space reserved for real HTML interface elements.
+• Animation is subtle: wind, clouds, lights, water, idle breathing and occasional environmental events.
+• No baked-in interface text, generated gibberish signage or unreadable AI lettering.
+Art test
+A screenshot without buttons should still look like a page from a beautiful illustrated book. A screenshot with 
+buttons should still look like a functioning game.
+--- PAGE 37 ---
+THE WORLD  |  MASTER DESIGN BIBLE
+Page 37
+IMAGE GENERATION RULES
+Visual Consistency Contract
+Cursor must establish shared references before generating production assets.
+1. Create a visual bible containing palette, rendering style, lighting examples, architecture rules, 
+character proportions, line treatment, material references and prohibited looks.
+2. Create model sheets for recurring characters and companions: front, side, three-quarter, expressions, 
+scale and colour references.
+3. Create one approved hero image for each realm before generating interiors, objects or variations.
+4. Generate backgrounds without important UI text, characters or animation objects when those elements 
+need independent control.
+5. Generate moving objects as separate transparent assets: windmill blades, balloons, clouds, smoke, 
+lantern glow, water overlays and character idle parts.
+6. Use fixed asset naming, versioning and prompt metadata so later scenes can reproduce the style.
+7. Reject and regenerate assets with anatomy errors, inconsistent buildings, nonsensical object 
+placement, visible signatures or accidental franchise resemblance.
+8. Optimise approved originals into AVIF/WebP derivatives; preserve the high-resolution source outside 
+the public web bundle.
+Never accept “close enough” characters
+If a recurring NPC changes face, clothing construction or scale between screens, the world immediately looks 
+fake. Character consistency has higher priority than producing content quickly.
+--- PAGE 38 ---
+THE WORLD  |  MASTER DESIGN BIBLE
+Page 38
+CURSOR PRODUCTION TEMPLATE
+Master Background Prompt Template
+A reusable prompt structure for every illustrated location.
+Template: realm or location background
+Generate a high-resolution 16:9 illustrated background for an original children’s fantasy browser world 
+named The World. Scene: [LOCATION AND VIEWPOINT]. Realm identity: [SIGNATURE RULE, MATERIALS, COLOURS 
+AND WEATHER]. Include [KEY LANDMARKS AND CLICKABLE HOTSPOT AREAS]. Mood: [EMOTIONAL GOAL]. Time and 
+lighting: [SPECIFIC LIGHT]. Art direction: richly detailed hand-painted storybook environment, gouache 
+and watercolour texture combined with polished digital painting, coherent architecture, layered 
+cinematic depth, warm and magical without excessive saturation. Reserve calm visual space at [UI 
+REGION] for real HTML interface. Do not include text, logos, buttons, visible UI, copyrighted 
+characters, watermarks, signatures or generated writing. Do not include moving objects that need 
+separate animation layers: [LIST]. No photorealism, no generic flat vector style, no random collage 
+composition.
+Production notes: Generate at least one clean desktop master. Create a deliberate portrait/mobile 
+crop or separate composition when the desktop scene cannot crop safely.
+Template: transparent character asset
+Generate a full-body transparent-background illustration of [CHARACTER NAME AND ROLE] for The World. 
+Match the approved visual bible and reference sheet exactly. Age, proportions and silhouette: 
+[DETAILS]. Clothing and materials: [DETAILS]. Pose and expression: [DETAILS]. Lighting direction: 
+[DETAILS]. Painterly storybook rendering with clean transparent edges and consistent scale. No scenery, 
+text, logos, weapons unless explicitly required, franchise resemblance, duplicate limbs, malformed 
+hands or cropped body parts.
+--- PAGE 39 ---
+THE WORLD  |  MASTER DESIGN BIBLE
+Page 39
+INTERACTION COMPOSITION
+Scene and Hotspot Design
+Every picture should invite clicking without looking like a hidden-object 
+advertisement.
+Element Rule
+Primary landmarks Three to six obvious destinations with distinctive 
+silhouettes.
+Secondary hotspots Small characters, signs, windows, paths or objects 
+discovered through cursor/touch feedback.
+Secret hotspots Rare or state-dependent; never required without a 
+discoverable clue.
+UI safe zone Calm region reserved for title, menu or dialogue.
+Depth layers Foreground framing, playable middle ground and distant 
+worldbuilding.
+Animation anchors Clear positions for separate moving assets; coordinates 
+stored relative to scene.
+Responsive crop Important landmarks remain reachable on tablet and 
+phone; use alternate composition if needed.
+Accessibility map Every hotspot exists in keyboard order and an optional 
+labelled list or discovery mode.
+Hotspot feedback
+Hover or focus may add a soft glow, movement, label or sound. Do not cover the artwork in permanent icons 
+unless an accessibility setting requests stronger guidance.
+--- PAGE 40 ---
+THE WORLD  |  MASTER DESIGN BIBLE
+Page 40
+UI DIRECTION
+Interface System
+Real HTML controls should feel physically integrated into the illustrated world.
+Component Visual language
+Primary action Deep moss green, restrained gold detail, soft bevel, 
+clear pressed state.
+Secondary action Warm parchment with dark ink and illustrated icon.
+Information action Muted purple or navy, book/map motifs.
+Dialogue panel Illustrated parchment or material appropriate to the 
+realm, with readable text and portrait.
+Inventory Cabinet, satchel or field journal metaphor; responsive 
+grid beneath the visual framing.
+Modal Travel journal, book spread or framed panel; focus 
+trapped and keyboard accessible.
+Selection Gold outline plus icon/check shape, not colour alone.
+Loading Small world-specific animation and useful progress 
+language; never a blank spinner on white.
+Error Calm, specific and recoverable. A lost-path metaphor 
+may decorate but must not obscure the fix.
+• Buttons must remain large enough for touch.
+• Never bake essential labels into images.
+• Text remains readable over every seasonal background.
+• UI motion honours reduced-motion preferences.
+• Do not make children decipher decorative fonts for routine controls.
+--- PAGE 41 ---
+THE WORLD  |  MASTER DESIGN BIBLE
+Page 41
+ATMOSPHERE
+Animation and Audio
+Movement should make the page breathe, not demand attention.
+Animation priorities
+• Slow environmental loops
+• Purposeful character idles
+• Clear click and reward feedback
+• Rare surprising events
+• Layered parallax with restrained movement
+• Reduced-motion alternatives
+Audio priorities
+• Distinct realm ambience
+• Memorable but gentle music themes
+• Crisp tactile interface sounds
+• Character motifs and companion noises
+• No autoplay before user interaction
+• Independent music and sound controls
+Use CSS transforms, lightweight video loops, sprite sheets or canvas effects depending on the asset. Keep 
+moving objects separate when possible. Never animate an entire large background merely to make one 
+waterfall move.
+Silence is valid
+The complete experience must remain understandable and emotionally coherent with audio disabled.
+--- PAGE 42 ---
+THE WORLD  |  MASTER DESIGN BIBLE
+Page 42
+MULTI-DEVICE
+Responsive Experience
+The World must feel designed for desktop, iPad and phone - not shrunk to fit.
+Device Design approach
+Desktop Full cinematic scene, pointer hover, subtle parallax, side 
+panels and broad landscape composition.
+Tablet landscape Near-desktop composition with larger targets and 
+reduced decorative UI.
+Tablet portrait Recompose panels vertically; preserve artwork focus and 
+provide touch-friendly hotspot access.
+Phone portrait Use intentional portrait crops or separate artwork. Stack 
+actions, reduce decoration and avoid tiny hotspots.
+Phone landscape Support game modes where useful, but never require 
+rotation for core navigation.
+Installed PWA Home-screen icon, safe-area support, offline shell and 
+app-like navigation without hiding browser accessibility.
+Mobile image rule
+If the desktop crop removes the explorer, companion or primary destination, create a separate mobile 
+composition. Do not accept a technically responsive but emotionally empty crop.
+--- PAGE 43 ---
+THE WORLD  |  MASTER DESIGN BIBLE
+Page 43
+CMS DIRECTION
+Content Production Model
+The world must grow through reusable structured content, not hard-coded pages.
+Content type Core fields
+Realm Name, summary, hero art, palette, music, entry rules, seasonal 
+variants.
+Scene Background layers, hotspots, UI region, ambience, state 
+conditions, mobile composition.
+Hotspot Coordinates, shape, label, action, state visibility, keyboard 
+order, sound and animation.
+NPC Reference sheet, portraits, role, traits, relationships, dialogue 
+sets and state memory.
+Quest Prerequisites, nodes, choices, age variants, rewards, world 
+changes and replay rules.
+Item Art, description, category, source, rarity, trade rules, price and 
+collection links.
+Game Launch config, controls, reward caps, score rules, accessibility 
+and version.
+Event Dates, eligibility, scene variations, tasks, rewards, archive and 
+recurrence.
+Home Quest Guardian-defined or system task, approval rule, cap, age labels 
+and reward mapping.
+The content system should support previewing a complete scene with a chosen player state before 
+publication. Production staff should not need to edit source code to change dialogue, hotspot visibility or 
+seasonal artwork.
+--- PAGE 44 ---
+THE WORLD  |  MASTER DESIGN BIBLE
+Page 44
+SECTION 07
+Technology, Data and 
+Operations
+Build the content engine and safety boundaries before scaling the world.
+--- PAGE 45 ---
+THE WORLD  |  MASTER DESIGN BIBLE
+Page 45
+TECHNICAL FOUNDATION
+Recommended Architecture
+Browser-first, component-driven and expandable.
+• Application: Next.js, React and TypeScript for world pages, account surfaces and guardian portal.
+• Game runtime: Phaser for mini-games, battles and selected walkable micro-zones.
+• Backend: Postgres and Supabase-style services for authentication, data, realtime events where necessary 
+and row-level security.
+• Storage: Object storage for layered art, optimised derivatives, audio, video loops and downloadable source 
+packages.
+• Content: A structured CMS with draft, preview, review and publish states.
+• Delivery: Progressive Web App first; Capacitor/native packaging only after browser experience is strong.
+• Notifications: Transactional email to guardians; no direct child-to-stranger communication channels.
+• Observability: Error tracking, performance monitoring, audit logs and safety-focused analytics.
+Why not Unreal
+The primary experience is illustrated scenes, content systems, responsive interfaces and lightweight games. 
+A web stack is faster to produce, easier to update and naturally supports browser, phone and iPad.
+--- PAGE 46 ---
+THE WORLD  |  MASTER DESIGN BIBLE
+Page 46
+DATA ARCHITECTURE
+High-Level Data Model
+Separate player fantasy data from guardian identity and approval data.
+Entity Purpose
+accounts Authentication identity and account status.
+player_profiles Nickname, age path, explorer style, preferences and onboarding 
+state.
+guardian_profiles Guardian identity, consent, notification and billing settings.
+guardian_links Permissioned relationship between guardian and child account.
+companions Species, appearance traits, bond, abilities and history.
+player_inventory Item ownership, quantity, source and lock state.
+player_currency Balances and append-only transaction references.
+quests / quest_progress Authored quest definitions and player state.
+scenes / hotspots Published content and interaction definitions.
+npc_relationships Per-player flags, dialogue state and memory.
+home_quests Task definition, recurrence and reward policy.
+home_quest_submissions Child claim, guardian decision, message and audit timestamps.
+events / participation Seasonal configuration and player progress.
+purchase_ledger Guardian-approved transactions and refunds.
+audit_logs Sensitive guardian, reward, moderation and publication actions.
+Currency integrity
+Every balance change should reference an append-only transaction record. Never rely solely on a mutable 
+“coins” number that can change without an audit trail.
+--- PAGE 47 ---
+THE WORLD  |  MASTER DESIGN BIBLE
+Page 47
+ENGINEERING RULES
+Security and Permission Boundaries
+Convenient prototypes must not become unsafe production foundations.
+• Use server-side authorisation for rewards, purchases, guardian actions and content access.
+• Apply row-level data policies so accounts can read only permitted records.
+• Never trust game scores, task completion or currency changes sent directly from a browser.
+• Use signed, expiring guardian approval links with clear context and a login fallback.
+• Rate-limit account creation, email actions, reward claims and sensitive endpoints.
+• Store secrets only in environment configuration, never client bundles or generated prompts.
+• Maintain separate draft and published content states.
+• Log sensitive changes while avoiding storage of unnecessary child behaviour detail.
+• Create automated tests for cross-account access and guardian-link permissions.
+• Design account recovery so a child cannot take over a guardian identity or vice versa.
+Prototype warning
+Local storage is acceptable for an isolated visual prototype. It is not acceptable for real currency, guardian 
+approvals, purchases or child account security.
+--- PAGE 48 ---
+THE WORLD  |  MASTER DESIGN BIBLE
+Page 48
+SHIPPING DISCIPLINE
+Quality Assurance
+Every phase must end in a coherent journey that can be tested by a real person.
+Test layer Required checks
+Visual Desktop, tablet and phone screenshots; consistency with 
+references; no placeholder art or broken crops.
+Interaction Keyboard, touch and pointer; every hotspot and button; back 
+navigation; state persistence.
+Accessibility Focus order, labels, contrast, reduced motion, text scaling, 
+audio-independent meaning.
+Content Age variants, spelling, lore consistency, sensitive-language 
+review and missing states.
+Economy Reward limits, duplicate claims, transaction logs and exploit 
+attempts.
+Safety Permission boundaries, guardian separation, data minimisation 
+and purchase gates.
+Performance Largest contentful paint, image weight, animation cost, slow 
+networks and lower-end phones.
+Resilience Reload during actions, expired links, offline interruption, failed 
+email and partial content load.
+Regression Automated flows for onboarding, travel, quest completion, 
+reward claim and guardian approval.
+Phase exit gate
+A phase is not complete because every ticket is closed. It is complete when its intended player journey works, 
+looks coherent and survives the defined tests.
+--- PAGE 49 ---
+THE WORLD  |  MASTER DESIGN BIBLE
+Page 49
+OPERATIONS
+Live Operations and Analytics
+Use data to protect and improve the world, not manipulate children.
+Useful signals
+• Crashes and failed interactions
+• Slow scene loads and device classes
+• Quest abandonment caused by confusion
+• Accessibility-setting usage
+• Economy inflation and exploit patterns
+• Guardian approval delivery failures
+• Content reports and support themes
+• Broad return patterns after new chapters
+Avoid
+• Psychological targeting of individual children
+• Aggressive retention scoring
+• Selling behavioural profiles
+• Manipulative push notifications
+• Using private Home Quest details for marketing
+• Optimising purchases through distress or urgency
+• Publicly ranking children by playtime or spending
+Live operations require a content calendar, event rollback plan, support ownership, incident response 
+process, reward correction tools and the ability to disable a broken game or hotspot without redeploying 
+the entire site.
+--- PAGE 50 ---
+THE WORLD  |  MASTER DESIGN BIBLE
+Page 50
+SECTION 08
+Master Production Roadmap
+Build a small world that feels real, then expand it safely.
+--- PAGE 51 ---
+THE WORLD  |  MASTER DESIGN BIBLE
+Page 51
+SEQUENCE
+Roadmap at a Glance
+Twelve phases move from visual proof to a sustainable live world.
+The sequence is intentional. The team first proves the visual identity and opening experience, then 
+creates the reusable world and story systems, then adds combat and mini-games, then introduces 
+guardian-connected features, economy depth, seasonal operations and walkable zones. Safety and 
+technical foundations are refined continuously, with a dedicated beta phase before public launch.
+Scope rule
+Do not begin mass-generating realms before one complete realm proves the scene, hotspot, NPC, quest, 
+reward, responsive and content-publication systems.
+--- PAGE 52 ---
+THE WORLD  |  MASTER DESIGN BIBLE
+Page 52
+PRODUCTION ROADMAP
+Phase 0: Vision and Visual Bible
+Create the shared source material that prevents every later screen from drifting.
+Phase goal
+Lock the emotional target, working lore, design language and recurring visual references.
+Player outcome
+• A viewer can recognise The World from a 
+screenshot without seeing the logo.
+Build outcome
+• Approved visual bible, UI kit, character sheets, 
+asset rules and prototype repository foundation.
+Dependencies: This master bible and the approved homepage reference.
+• Create final palette and typography tests.
+• Create explorer proportion and clothing guide.
+• Design at least three companion silhouette families.
+• Create Crossroads and Backwards Town realm mood boards.
+• Create component examples: button, panel, dialogue, modal, inventory tile and loading state.
+• Create desktop, tablet and phone art-cropping rules.
+• Establish asset metadata: prompt, seed/reference, version, source, derivative formats and usage rights.
+--- PAGE 53 ---
+THE WORLD  |  MASTER DESIGN BIBLE
+Page 53
+PHASE 0 DETAIL
+Phase 0 Screen and Asset Inventory
+This phase produces references, not the complete game.
+Deliverable Minimum output
+Brand mark Primary wordmark, compact mark, monochrome and 
+small-size variants.
+Homepage style frame Desktop and phone compositions with approved 
+atmosphere.
+Explorer model sheet Four starter directions plus proportion and pose 
+standards.
+Companion exploration At least twelve silhouettes, reduced to three coherent 
+families.
+NPC style frame One older, one child, one non-human and one comic 
+character.
+Realm frames Crossroads, Backwards Town and one cosmic Between 
+scene.
+UI kit All basic controls in default, hover, focus, pressed, 
+disabled and high-contrast states.
+Motion guide Wind, cloud, glow, idle, transition and reduced-motion 
+examples.
+Asset pipeline Folder naming, optimisation, references and review 
+checklist.
+Exit gate
+No production scene generation begins until recurring characters and the visual rendering style can be 
+reproduced consistently across at least three separate images.
+--- PAGE 54 ---
+THE WORLD  |  MASTER DESIGN BIBLE
+Page 54
+PRODUCTION ROADMAP
+Phase 1: Your First Day
+Prove that a new player can fall in love with the world before any large content library 
+exists.
+Phase goal
+Build the complete opening journey from homepage through account setup, explorer and companion creation, 
+arrival at the Crossroads and the first invitation toward Backwards Town.
+Player outcome
+• The player feels welcomed, creates an identity, 
+bonds with a companion and leaves wanting to 
+return.
+Build outcome
+• A production-quality responsive shell, account 
+model, onboarding state, first cinematic scenes and 
+reusable dialogue/navigation components.
+Dependencies: Phase 0 visual bible and functioning secure account foundation.
+• Animated homepage with windmill, balloon, clouds, waterfall and gentle character idle.
+• Create account, log in, options and “What is The World?” states.
+• Broad age-path selection and nickname guidance.
+• Explorer appearance selection.
+• Companion encounter and selection - framed as meeting rather than purchasing.
+• Arrival through The Between.
+• Crossroads introduction and first room assignment.
+• First NPC conversation and the “missing tomorrow’s map” hook.
+• Save and resume onboarding across devices.
+--- PAGE 55 ---
+THE WORLD  |  MASTER DESIGN BIBLE
+Page 55
+PHASE 1 FLOW
+Phase 1 Player Flow
+Every arrow becomes a designed state in the detailed phase PDF.
+1. Open the animated hilltop homepage and choose Start Adventure.
+2. Create or log into an account with guardian-consent handling appropriate to the release jurisdiction.
+3. Choose an explorer nickname, broad age path and starter appearance.
+4. Follow lights into a small companion sanctuary and meet three possible companions through short 
+authored scenes.
+5. Choose a companion and complete a tiny bonding interaction.
+6. Travel through The Between in a short layered transition.
+7. Arrive at the Crossroads, where the world map is mostly dark.
+8. Meet the first recurring guide, who gives the player a room and notices that tomorrow’s map is missing.
+9. Open the room, place the first keepsake and see a locked unexplained door.
+10. Receive the first route marker toward Backwards Town and a calm invitation to continue now or return 
+later.
+Phase 1 reward
+The player receives a small Wayfinder satchel, a first coin pouch, the companion’s trust token and a map 
+page with one destination glowing.
+--- PAGE 56 ---
+THE WORLD  |  MASTER DESIGN BIBLE
+Page 56
+PHASE 1 ART
+Phase 1 Image Production
+The detailed phase PDF will define each screen individually; this is the master asset 
+scope.
+Asset family Required direction
+Homepage Layered hill, valley, town, explorer, companion silhouette, 
+windmill, balloon, clouds, waterfall and UI signs.
+Onboarding trailhead Woodland registration wagon, signpost, avatar preview area and 
+age-card emblems.
+Companion sanctuary Warm circular room or grove with three distinct resting places; 
+no pet-shop feeling.
+The Between Cosmic path that can resemble stars, dreams and neural light 
+without becoming science fiction.
+Crossroads arrival Welcoming station/plaza with visible paths, locked routes and 
+central Heartstar motif.
+Player room Small beautiful blank room with display shelf, companion corner 
+and sealed door.
+Guide NPC Full model sheet, expressions, portraits and story poses.
+UI Account, dialogue, selection, accessibility, loading, error and 
+save states.
+Responsive variants Intentional phone compositions for every full-scene screen.
+Exit gate
+A brand-new user can complete the entire first-day journey on desktop and phone, close the browser, return 
+on another device and continue from the correct state.
+--- PAGE 57 ---
+THE WORLD  |  MASTER DESIGN BIBLE
+Page 57
+PRODUCTION ROADMAP
+Phase 2: The Crossroads and Player Home
+Turn the opening location into a place the player actually inhabits.
+Phase goal
+Build the persistent hub, home, map, daily return surfaces and first recurring systems.
+Player outcome
+• The player has a reliable home base and several 
+meaningful things to check without leaving the 
+hub.
+Build outcome
+• Reusable scene state, home decoration, daily 
+content, collections and travel interfaces.
+Dependencies: Phase 1 account, companion and Crossroads arrival.
+• Full Crossroads overview with hotspots: home district, map chamber, market cart, archive, portal garden and 
+event square.
+• Player home interior, inventory, wardrobe and companion area.
+• Daily gift designed as a small world interaction rather than a calendar pop-up.
+• First collection books and achievement cabinet.
+• NPC revisit dialogue and relationship flags.
+• Map unlocking and route prerequisites.
+• News/event presentation integrated into the environment.
+• Private notification centre using letters or journal entries.
+--- PAGE 58 ---
+THE WORLD  |  MASTER DESIGN BIBLE
+Page 58
+PHASE 2 DETAIL
+Phase 2 Screen Inventory
+The hub should support short daily visits before any major realm expansion.
+Screen group Examples
+Crossroads Main plaza, map chamber, archive entrance, market 
+lane, portal garden, event square.
+Home Room overview, decorate mode, wardrobe, companion 
+corner, shelf inspection, locked door.
+Progress Quest journal, Atlas, collections cabinet, achievements, 
+currency and item details.
+Daily Gift scene, returning NPC, changed weather, small 
+discovery and optional activity.
+Travel Realm map, destination card, locked-route explanation, 
+arrival transition.
+System Settings, guardian-link prompt, accessibility, support and 
+account management.
+Exit gate
+A player can spend fifteen satisfying minutes entirely within the Crossroads and leave with visible progress or 
+a new curiosity.
+--- PAGE 59 ---
+THE WORLD  |  MASTER DESIGN BIBLE
+Page 59
+PRODUCTION ROADMAP
+Phase 3: Backwards Town
+Launch one complete signature realm that proves the content engine.
+Phase goal
+Build a dense illustrated realm with memorable humour, character stories, shops, secrets and the first arcade.
+Player outcome
+• The player can explore for several sessions and 
+describe the town as a place, not a feature demo.
+Build outcome
+• Reusable realm, scene, hotspot, shop, quest, NPC 
+memory and game-launch systems.
+Dependencies: Crossroads travel, inventory, currency and journal.
+• Town arrival road and main overview.
+• Yesterday’s Bakery, Rewind Arcade, Tomorrow Post Office, Mayor’s Office, repair shop, inn and hidden lane.
+• At least eight recurring NPCs with visual sheets and relationship states.
+• One main town story, four character quests, several tiny interactions and two secrets.
+• First complete shop economy and item catalogue.
+• Two polished arcade games.
+• Day/night or normal/backwards event variation.
+• At least one optional alternative-resolution encounter.
+--- PAGE 60 ---
+THE WORLD  |  MASTER DESIGN BIBLE
+Page 60
+PHASE 3 NARRATIVE
+Phase 3 Core Story
+The missing tomorrow’s map leads somewhere funny, then somewhere meaningful.
+The player arrives because the Crossroads guide believes tomorrow’s map was accidentally delivered to 
+Backwards Town. The post office insists it cannot be collected until yesterday. Investigation leads through 
+the bakery, mayor, clock repairer and arcade. The apparent administrative joke gradually reveals that a 
+nervous young clock-creature has been reversing deliveries because it is frightened of a future event.
+• The player can solve practical problems while learning the town’s logic.
+• The frightened creature is not defeated as a villain; it can be understood and helped.
+• The map is recovered, but one route on it points to a place that should not exist.
+• Choices change later dialogue and a small town decoration, not access to the central story.
+• Age variants adjust length and subtlety while preserving the same emotional truth.
+Exit gate
+Backwards Town contains enough polished content for an external tester to play across multiple sessions 
+without seeing placeholder screens or unfinished systems.
+--- PAGE 61 ---
+THE WORLD  |  MASTER DESIGN BIBLE
+Page 61
+PRODUCTION ROADMAP
+Phase 4: Stories, Quests and World Memory
+Create the system that lets the world respond over months and years.
+Phase goal
+Expand authored narrative tools, branching state and NPC memory beyond one realm.
+Player outcome
+• Characters recognise the player and old choices 
+create later surprises.
+Build outcome
+• Quest editor, dialogue preview, localisation-ready 
+content, state debugging and narrative analytics.
+Dependencies: One complete realm demonstrating the requirements.
+• Node-based authored dialogue with age-path variants.
+• Quest prerequisites, branching, re-entry and recovery states.
+• NPC relationship and memory flags.
+• World-state changes and scene variants.
+• Mail, invitations and delayed consequences.
+• Content-review workflow with sensitive-theme flags.
+• Testing tools to preview any player state.
+• First cross-realm story connecting Backwards Town and Whispering Woods.
+Exit gate
+Writers can create and test a new multi-stage quest without changing application code, and engineers can 
+inspect exactly why any dialogue branch appeared.
+--- PAGE 62 ---
+THE WORLD  |  MASTER DESIGN BIBLE
+Page 62
+PRODUCTION ROADMAP
+Phase 5: Battle System
+Add satisfying strategic conflict without changing the world’s emotional identity.
+Phase goal
+Create the reusable turn-based battle framework and first encounters.
+Player outcome
+• Players gain a new form of mastery and spectacle, 
+with options beyond simply attacking.
+Build outcome
+• Battle renderer, ability system, enemy logic, 
+reward validation, accessibility and content tools.
+Dependencies: Explorer stats, companion abilities, items and quest state.
+• Responsive battle stage embedded within illustrated story context.
+• Basic attack, ability, companion action, item, defend and observe actions.
+• Enemy intent and readable status effects.
+• Contextual alternate resolutions.
+• Equipment and ability loadouts kept simple for first release.
+• Server-authoritative outcome and rewards.
+• Speed, animation and reduced-motion settings.
+• Tutorial encounter and three distinct enemy archetypes.
+Exit gate
+The same battle is understandable and enjoyable with mouse, keyboard and touch, and remains readable 
+with motion reduced and sound disabled.
+--- PAGE 63 ---
+THE WORLD  |  MASTER DESIGN BIBLE
+Page 63
+PRODUCTION ROADMAP
+Phase 6: Arcade Platform
+Make it possible to add polished games without rebuilding account integration each 
+time.
+Phase goal
+Build the shared mini-game shell and release the first small library.
+Player outcome
+• Players can jump into varied games and bring 
+meaningful rewards back to the world.
+Build outcome
+• Phaser game SDK, score validation, input profiles, 
+pause, accessibility, reward caps and leaderboards.
+Dependencies: Currency ledger, inventory, event configuration and world launch points.
+• Shared launch, loading, pause, result and reward screens.
+• Keyboard, touch and gamepad input mapping.
+• Game-specific tutorial and practice modes.
+• Server validation or anti-cheat strategy appropriate to each game.
+• Daily and weekly reward caps.
+• Private best scores and optional anonymised event placement.
+• Performance budget for lower-end phones.
+• Initial games: Rewind Run, Unbake!, Moonlake Fishing and Whisper Catcher.
+Exit gate
+A new mini-game can be added using documented interfaces without custom rebuilding of login, currency, 
+settings, rewards or responsive shell.
+--- PAGE 64 ---
+THE WORLD  |  MASTER DESIGN BIBLE
+Page 64
+PRODUCTION ROADMAP
+Phase 7: Home Quests and Guardian Portal
+Introduce the optional family bridge only after the magical world stands on its own.
+Phase goal
+Build secure guardian linking, optional real-world tasks, approvals and family controls.
+Player outcome
+• A child can receive a small magical bonus for 
+helpful real-life actions without feeling monitored 
+or punished.
+Build outcome
+• Separate guardian portal, permissions, notification 
+delivery, task rules, audit logs and privacy controls.
+Dependencies: Stable accounts, reward ledger, child-safety review and legal input.
+• Guardian invitation and linking flow.
+• System and custom Home Quest creation.
+• Child claim and guardian confirm/not-yet flow.
+• Signed email action links and dashboard history.
+• Reward caps, recurrence and anti-farming rules.
+• Preset and limited custom encouragement messages.
+• Purchase, age-path and accessibility controls.
+• Export, unlink and deletion request processes.
+Exit gate
+Security testing demonstrates that a child cannot access guardian data, one guardian cannot access another 
+family, and rewards cannot be claimed without authorised approval.
+--- PAGE 65 ---
+THE WORLD  |  MASTER DESIGN BIBLE
+Page 65
+PRODUCTION ROADMAP
+Phase 8: Economy, Shops, Crafting and 
+Collections
+Give items meaning and create sustainable goals without inflation or clutter.
+Phase goal
+Expand the item economy, shops, collections and crafting using auditable systems.
+Player outcome
+• Different play styles can pursue useful, decorative 
+and story-rich goals.
+Build outcome
+• Item CMS, pricing tools, transaction analytics, 
+crafting recipes, storage and collection displays.
+Dependencies: Stable reward ledger, first realm shop data and player home displays.
+• Clear currency roles: coins for ordinary trade, Starlight for special progress, event tokens only when 
+necessary.
+• Shop stock rules and world-consistent pricing.
+• Crafting tied to places and characters rather than generic recipe spam.
+• Item provenance and collection stories.
+• Duplicate-item uses and safe sinks to control inflation.
+• Storage that is generous enough for collectors.
+• Protected gifting or trading only after safety review.
+• Cosmetic monetisation integrated without gameplay power.
+Exit gate
+Economy simulations and test accounts show stable earning and spending across new, regular and highly 
+active play patterns.
+--- PAGE 66 ---
+THE WORLD  |  MASTER DESIGN BIBLE
+Page 66
+PRODUCTION ROADMAP
+Phase 9: Seasonal World and Wish Lists
+Prove that the universe can change safely and memorably over time.
+Phase goal
+Launch event infrastructure, scene variants, shared goals and optional guardian-enabled wish-list rituals.
+Player outcome
+• The player sees the world transform and carries 
+permanent memories from temporary events.
+Build outcome
+• Event CMS, scheduling, rollback, variation assets, 
+archival entries and wish-list privacy model.
+Dependencies: Content publication workflow, guardian portal and live-operations ownership.
+• First major seasonal event across homepage, Crossroads and Backwards Town.
+• Global anonymous progress meter with no direct communication.
+• Event quests, games, items and permanent keepsakes.
+• Scene variation and asset preloading.
+• Repeat-event versioning and archive pages.
+• Guardian choice of Christmas, alternative celebration, birthdays or disabled wish lists.
+• Private real-world wish data separated from in-world favourites.
+• Emergency event disable and reward correction tools.
+Exit gate
+The event can start and end automatically, be paused safely, preserve earned history and avoid leaving 
+broken hotspots or inaccessible rewards.
+--- PAGE 67 ---
+THE WORLD  |  MASTER DESIGN BIBLE
+Page 67
+PRODUCTION ROADMAP
+Phase 10: Walkable Realms and Expanded 
+Universe
+Let selected illustrations become physical spaces while preserving the page-first 
+identity.
+Phase goal
+Add reusable walkable micro-zones and open several new realms.
+Player outcome
+• Players experience genuine movement and 
+discovery as a special expansion of the world.
+Build outcome
+• Top-down or side-view movement framework, zone 
+editor, save points, accessibility and scene 
+integration.
+Dependencies: Stable world content, Phaser runtime and proven realm-production process.
+• First zone: a hidden path inside Whispering Woods.
+• Movement, collision, interaction and contextual controls.
+• Touch layout that does not cover important play space.
+• Accessible route guidance and reduced precision requirements.
+• Scene-to-zone and zone-to-scene transitions.
+• Collectibles and quest state synced with normal world pages.
+• Additional realm launches using the established content engine.
+• No attempt to convert every existing scene into a walkable level.
+Exit gate
+The first walkable zone feels like entering the picture, runs well on target phones and can be authored without 
+modifying engine code.
+--- PAGE 68 ---
+THE WORLD  |  MASTER DESIGN BIBLE
+Page 68
+PRODUCTION ROADMAP
+Phase 11: Public Beta and Live Operations
+Harden the complete experience before inviting a large child audience.
+Phase goal
+Test safety, performance, content clarity, economy and operations with controlled cohorts.
+Player outcome
+• Families experience a stable, trustworthy world 
+with meaningful support and clear controls.
+Build outcome
+• Incident response, support tooling, legal readiness, 
+load validation, analytics review and launch 
+operations.
+Dependencies: All intended launch systems, external specialist review and operational staffing.
+• Closed family testing, then invitation beta, then controlled public opening.
+• Independent child-safety, privacy and security assessment.
+• Accessibility audit with users and assistive technology.
+• Performance testing on low-end Android, iPad and common desktop browsers.
+• Economy and reward exploit testing.
+• Content review across age paths.
+• Support, refund, deletion, incident and account-recovery procedures.
+• Live event rehearsal and rollback.
+• Clear launch scope; unfinished realms remain intentionally locked, not visibly broken.
+Launch principle
+A smaller complete world is safer and more magical than a large public site full of unfinished doors, 
+placeholder stories and unreliable rewards.
+--- PAGE 69 ---
+THE WORLD  |  MASTER DESIGN BIBLE
+Page 69
+SECTION 09
+Cursor Production Contract
+Make long AI coding runs precise, reviewable and difficult to misinterpret.
+--- PAGE 70 ---
+THE WORLD  |  MASTER DESIGN BIBLE
+Page 70
+AI WORKFLOW
+How Cursor Should Receive Work
+Each phase needs a dedicated construction manual, not one endlessly growing prompt.
+1. Attach this master PDF and the relevant detailed phase PDF.
+2. Provide the current repository and explicitly identify existing architecture that must be preserved.
+3. Attach approved reference images and character sheets as real files with stable names.
+4. Tell Cursor to inspect the repository before changing it, then implement rather than merely propose.
+5. Require it to generate or source every specified asset and reject placeholders.
+6. Require testable checkpoints inside the phase, but let it continue through the complete assigned scope.
+7. Require it to run builds, tests and visual checks at desktop, tablet and phone sizes.
+8. Require a final implementation report listing files, routes, generated assets, known limitations and test 
+results.
+9. Review visually before beginning the next phase. Do not stack new prompts on a broken visual 
+foundation.
+Prompt discipline
+Avoid vague requests such as “make it magical.” The phase PDF must define composition, asset layers, text, 
+interactions, states, responsive behaviour, data and acceptance criteria screen by screen.
+--- PAGE 71 ---
+THE WORLD  |  MASTER DESIGN BIBLE
+Page 71
+REUSABLE OUTLINE
+Standard Detailed Phase PDF Structure
+Every future phase manual should follow this order.
+Section Purpose
+1. Phase objective The exact player experience and build outcome.
+2. Locked terminology Names and concepts Cursor must use consistently.
+3. Existing-system audit What to inspect and preserve before coding.
+4. User journeys Every entry path, branch, interruption and return state.
+5. Screen inventory A numbered list of every page, modal, overlay and important 
+state.
+6. Screen-by-screen specification Composition, copy, interaction, animation, responsive and 
+accessibility details.
+7. Image and asset plan Every background, layer, character, object, icon, variation and 
+exact prompt.
+8. Component architecture Routes, reusable components, services, state and folder 
+structure.
+9. Data model and permissions Tables, fields, validation, ownership and audit requirements.
+10. Content definitions Dialogue, quest nodes, item data, configuration and age 
+variants.
+11. Testing plan Functional, visual, accessibility, security, performance and edge 
+cases.
+12. Acceptance criteria Unambiguous evidence required before the phase is complete.
+13. Out-of-scope list Features Cursor must not begin during this phase.
+14. Final report format What Cursor returns after implementation.
+--- PAGE 72 ---
+THE WORLD  |  MASTER DESIGN BIBLE
+Page 72
+REUSABLE TEMPLATE
+Screen Specification Template
+Use this block for every important screen in a phase PDF.
+Field Required content
+Screen ID Stable code such as P1-S07.
+Route/state URL, modal, overlay or game state.
+Player purpose Why the player is here and what they should feel.
+Entry conditions How the screen is reached and required account/world state.
+Visual composition Foreground, background, characters, UI safe zones, lighting and 
+focal order.
+Exact copy Headings, dialogue, labels, hints, errors and age variants.
+Interactive elements Buttons, hotspots, keyboard order, gestures and disabled states.
+Animation/audio Loops, transitions, sound cues and reduced-motion behaviour.
+Responsive rules Desktop, tablet, portrait phone and safe-area treatment.
+Data reads/writes State required and state changed.
+Failure/edge states Offline, slow asset, invalid state, expired session and recovery.
+Assets File names, dimensions, layers, prompts and references.
+Acceptance evidence Screenshots, tests and observed behaviours.
+--- PAGE 73 ---
+THE WORLD  |  MASTER DESIGN BIBLE
+Page 73
+CODING CONTRACT
+Cursor Implementation Rules
+These instructions should be repeated in every production prompt.
+• Do not return only a plan. Inspect, implement, run and fix.
+• Preserve functioning existing systems unless the phase explicitly replaces them.
+• Use reusable typed components and structured content rather than hard-coded copies of each page.
+• Do not leave placeholder art, lorem ipsum, fake buttons or routes leading to empty pages.
+• Generate assets to named files, optimise them and record generation prompts in metadata.
+• Use real HTML for essential text and controls.
+• Implement desktop, tablet and phone deliberately.
+• Honour keyboard, focus, contrast, reduced motion and text scaling.
+• Use server-side validation for rewards, guardian actions and account-sensitive operations.
+• Run type checking, linting, unit tests and build.
+• Add automated tests for the critical player journey.
+• Document any limitation honestly rather than pretending it is complete.
+Stop condition
+Cursor should stop and report when a requirement is technically impossible with the available tools or would 
+require unsafe assumptions. It should not silently replace the requirement with a placeholder.
+--- PAGE 74 ---
+THE WORLD  |  MASTER DESIGN BIBLE
+Page 74
+PRODUCTION RECORDS
+Image Asset Metadata
+Every generated asset should be traceable and reproducible.
+Recommended sidecar JSON
+{
+  "asset_id": "p1-homepage-background-v03",
+  "file": "homepage-background-desktop-v03.webp",
+  "screen_ids": ["P1-S01"],
+  "asset_type": "background",
+  "dimensions": {"width": 2560, "height": 1440},
+  "source_file": "homepage-background-desktop-v03.png",
+  "prompt": "[FULL GENERATION PROMPT]",
+  "negative_requirements": ["no text", "no characters", "no windmill blades"],
+  "references": ["visual-bible-v1.png", "homepage-approved-v02.png"],
+  "status": "approved",
+  "created_at": "YYYY-MM-DD",
+  "notes": "Calm centre region reserved for menu. Mobile composition is separate."
+}
+Where a generation tool supports seed, model, style reference or source image identifiers, store them as 
+additional fields. Never rely on a chat history as the only record of how a production asset was made.
+--- PAGE 75 ---
+THE WORLD  |  MASTER DESIGN BIBLE
+Page 75
+SECTION 10
+Appendices
+Working terminology, writing rules and the immediate next documents to 
+create.
+--- PAGE 76 ---
+THE WORLD  |  MASTER DESIGN BIBLE
+Page 76
+GLOSSARY
+Working Terminology
+A shared language prevents prompt drift.
+Term Meaning
+The World The product and the fantasy universe.
+Wayfinder The player’s in-world role.
+Explorer The player avatar.
+Companion The bonded original magical creature.
+The Between The connecting cosmic space/path network.
+Heartstar Recurring mysterious source/light.
+Crossroads Primary safe hub and player-home location.
+Realm A major themed world or region.
+Scene A clickable illustrated location or interior.
+Hotspot An accessible interactive region within a scene.
+Echo A collectible or phenomenon carrying traces of another place or 
+time.
+Starlight Working name for special progress currency or energy earned 
+through meaningful activity.
+Home Quest Optional guardian-approved real-world task.
+Age path Broad dialogue and support adaptation: Bright, Curious or Far 
+Path.
+Enterable picture A scene that launches a walkable area or game.
+--- PAGE 77 ---
+THE WORLD  |  MASTER DESIGN BIBLE
+Page 77
+NARRATIVE STYLE
+Character Writing Rules
+Warm, funny and honest without sounding like an adult pretending to be a child.
+• Characters want things unrelated to teaching the player a lesson.
+• Humour comes from personality and world logic, not cruelty or humiliation.
+• Adults can be mistaken, apologetic, frightened, silly and still trustworthy.
+• Children and young characters have agency and are not merely quest objects.
+• Disabled characters are part of the world and have goals, skills and flaws beyond disability.
+• Do not resolve every uncomfortable feeling immediately. Some stories can end with support and continued 
+effort.
+• Avoid therapy jargon in ordinary dialogue.
+• Use honest, plain language when a safety message must be direct.
+• Do not imply that kindness always produces immediate rewards.
+• Recurring characters should remember meaningful help and also continue living when the player is absent.
+Dialogue test
+Read every line aloud. If it sounds like a worksheet, marketing copy or an adult delivering a disguised lecture, 
+rewrite it.
+--- PAGE 78 ---
+THE WORLD  |  MASTER DESIGN BIBLE
+Page 78
+MEASUREMENT
+Initial Success Measures
+The early goal is proof of affection and trust, not maximum scale.
+Question Evidence
+Do players want to enter? Homepage-to-start rate, qualitative reactions and visual 
+usability.
+Does onboarding create attachment? Completion, companion selection confidence and return 
+after first session.
+Does the world feel understandable? Navigation success, low confusion-related exits and 
+support feedback.
+Do children discover rather than merely follow? Optional hotspot discovery and varied paths through the 
+first realm.
+Do families trust it? Guardian linking completion, privacy understanding and 
+low purchase/support friction.
+Does it work across devices? Comparable completion and satisfaction on desktop, 
+phone and iPad.
+Are values invisible enough? Players discuss characters and outcomes rather than 
+describing the game as a lesson.
+Can the team expand it? Time and defect rate required to add a new scene, 
+quest, item or game.
+Do not optimise too early
+A small group loving the first realm is more valuable than a large group briefly sampling an unfinished 
+universe.
+--- PAGE 79 ---
+THE WORLD  |  MASTER DESIGN BIBLE
+Page 79
+RISK REGISTER
+Primary Risks and Countermeasures
+The biggest risks are creative inconsistency, uncontrolled scope and premature child-
+facing launch.
+Risk Countermeasure
+AI-art inconsistency Use approved sheets, asset metadata, review gates and a small 
+recurring cast before bulk generation.
+Too much world, too little depth Complete Crossroads and Backwards Town before opening 
+many realm doors.
+Educational tone overwhelms magic Review stories first as entertainment; remove explicit praise 
+labels and summaries.
+Guardian feature becomes coercive Keep Home Quests optional, capped and separate from core 
+story access.
+Economy inflation or exploits Append-only ledger, server validation, caps, simulations and 
+correction tools.
+Mobile experience feels cropped Generate intentional mobile compositions and test lower-end 
+devices.
+Child privacy failure Minimise data, separate roles, specialist review and automated 
+permission testing.
+Monetisation erodes trust No loot boxes, no pay-to-win, guardian gates and transparent 
+store design.
+Cursor refactors destructively Phase-scoped prompts, repository audit, tests, branches and 
+review before the next phase.
+Live event failure Draft/preview, staged release, rollback, disable switches and 
+reward correction.
+--- PAGE 80 ---
+THE WORLD  |  MASTER DESIGN BIBLE
+Page 80
+NEXT ACTION
+Immediate Next Documents
+The master is complete; production should now move into focused phase manuals.
+1. Phase 0 PDF: Visual Bible and Asset Pipeline - finalise style, characters, companion families, UI kit and 
+generation workflow.
+2. Phase 1 PDF: Your First Day - screen-by-screen construction manual from homepage through the first 
+Crossroads invitation.
+3. Phase 2 PDF: Crossroads and Player Home - hub, inventory, room, map, dailies and first collections.
+4. Phase 3 PDF: Backwards Town - the complete flagship realm, including every scene, character, quest, 
+shop and initial game.
+5. Dedicated Safety and Guardian Technical Specification - detailed permissions, consent, email 
+approvals, data retention and review requirements before Home Quests are built.
+6. Mini-Game SDK Specification - created immediately before Phase 6 after the main world shell and 
+economy are stable.
+Recommended next build document
+Create Phase 0 first, even if the homepage prototype already exists. It will establish the consistency system 
+needed to generate dozens or hundreds of assets without the world visually falling apart.
+--- PAGE 81 ---
+THE WORLD  |  MASTER DESIGN BIBLE
+Page 81
+CLOSING
+Final Statement
+The technology should disappear behind the feeling.
+The World does not need to simulate every footstep to feel enormous. It needs places worth imagining, 
+characters worth remembering, games worth replaying and small secrets that make a child believe the 
+world continues when the screen is closed.
+Its originality comes from the combination: a cosmic hidden structure, warm storybook fantasy, illustrated 
+click-through exploration, occasional enterable pictures, companions shaped by the journey, honest 
+values, optional guardian-approved real-world quests and a deliberate refusal to expose children to open 
+social harm.
+The first objective is not to build thousands of pages. It is to build one opening journey and one town so 
+convincingly that the player believes thousands of pages could exist.
+The north star
+Create the place a child cannot wait to return to.

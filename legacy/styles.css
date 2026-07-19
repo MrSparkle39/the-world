@@ -51,22 +51,93 @@ body.reduce-motion * {
   overflow: hidden;
 }
 
+/* Full-bleed crop of the same art — fills any letterbox from the sharp contain layer */
+.hero-art-fill {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 48%;
+  display: block;
+  user-select: none;
+  pointer-events: none;
+}
+
 .hero-scene {
   position: absolute;
-  inset: -2%;
+  inset: 0;
   z-index: 0;
   will-change: transform;
   transition: transform 0.4s var(--ease);
 }
 
+/* Sharp full composition — zoomed out so characters + sign stay in frame */
 .hero-art {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center 42%;
+  object-fit: contain;
+  object-position: center center;
   display: block;
   user-select: none;
   pointer-events: none;
+}
+
+.balloon-layer {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  overflow: hidden;
+}
+
+/* Soft sky patch hiding the painted-in balloon; sized/positioned in JS */
+.balloon-cover {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+  display: block;
+  object-fit: cover;
+  opacity: 1;
+  transform-origin: center center;
+  z-index: 0;
+}
+
+.balloon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: auto;
+  display: block;
+  user-select: none;
+  transform-origin: 50% 85%;
+  filter: drop-shadow(0 3px 6px rgba(40, 55, 80, 0.18));
+  z-index: 1;
+  will-change: transform;
+}
+
+body.motion-on .balloon {
+  animation: balloon-float 8s ease-in-out infinite;
+}
+
+@keyframes balloon-float {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) rotate(-2deg);
+  }
+  25% {
+    transform: translate3d(-16%, -10%, 0) rotate(2.2deg);
+  }
+  50% {
+    transform: translate3d(5%, -15%, 0) rotate(-0.8deg);
+  }
+  75% {
+    transform: translate3d(14%, -6%, 0) rotate(1.6deg);
+  }
 }
 
 .vignette {
@@ -596,16 +667,18 @@ body.reduce-motion * {
   }
 }
 
+/* OS preference alone should not hard-disable .balloon — body.reduce-motion
+   (driven by Options / initial reduced-motion default) handles that. */
 @media (prefers-reduced-motion: reduce) {
-  .cloud,
-  .petal,
-  .ornament,
-  .twinkles i,
-  .menu {
+  body:not(.motion-on) .cloud,
+  body:not(.motion-on) .petal,
+  body:not(.motion-on) .ornament,
+  body:not(.motion-on) .twinkles i,
+  body:not(.motion-on) .menu {
     animation: none !important;
   }
 
-  .hero-scene {
+  body:not(.motion-on) .hero-scene {
     transition: none;
   }
 }
