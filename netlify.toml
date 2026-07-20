@@ -1,15 +1,16 @@
-# Next.js App Router on Netlify (@netlify/plugin-nextjs / OpenNext).
+# Next.js App Router on Netlify (@netlify/plugin-nextjs v5 / OpenNext).
 #
-# CRITICAL — Netlify UI Build settings must be:
+# Netlify UI Build settings must be:
 #   Base directory:     (blank)
-#   Publish directory:  (blank)  ← NOT "/", NOT ".", NOT ".next"
+#   Publish directory:  .next   ← required by plugin v5 (NOT blank, NOT "/", NOT ".")
 #   Build command:      npm run build
-# Do NOT add a [build].publish key here; the Next plugin owns the publish dir.
-# A UI Publish of ".next" or site root causes /_next/static 404s and a stuck
-# "Finding the path…" screen (SSR HTML without client JS).
+# Blank publish defaults to site root and the plugin fails with
+# "publish directory cannot be the same as the base directory".
+# The plugin then stages CDN assets under .netlify/static/_next/...
 
 [build]
   command = "npm run build"
+  publish = ".next"
 
 [build.environment]
   NODE_VERSION = "20"
