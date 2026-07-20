@@ -22,34 +22,27 @@ export default function HomePage() {
 
   return (
     <main className="relative min-h-dvh overflow-hidden">
-      {/* Image-only backdrop: cover fill + contain sharp scene */}
+      {/* Full-bleed hero: single cover layer (no contain letterboxing) */}
       <div className="absolute inset-0 z-0">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src="/art/homepage/homepage-valley-base.png"
-          alt=""
-          className="absolute inset-0 h-full w-full object-cover object-[center_48%]"
-          aria-hidden
-        />
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src="/art/homepage/homepage-valley-base.png"
           alt="A lush fantasy valley with a castle, village, windmill, and explorers on a hill."
-          className="absolute inset-0 h-full w-full object-contain"
+          className="absolute inset-0 h-full w-full object-cover object-[center_40%]"
         />
         {cracked && (
           // eslint-disable-next-line @next/next/no-img-element
           <img
             src="/art/backwards-town/sky-cracked-moon.png"
             alt=""
-            className="pointer-events-none absolute right-[8%] top-[6%] h-[18vmin] w-[18vmin] object-contain opacity-95"
+            className="pointer-events-none absolute right-[10%] top-[7%] h-[16vmin] w-[16vmin] object-contain opacity-95"
           />
         )}
-        {/* Floating balloon */}
+        {/* Floating balloon — upper-right sky, clear of castle/subjects */}
         <motion.img
           src="/art/homepage/homepage-balloon.png"
           alt=""
-          className="pointer-events-none absolute right-[12%] top-[8%] w-[min(9vw,110px)] drop-shadow-md"
+          className="pointer-events-none absolute right-[14%] top-[10%] w-[min(8vw,96px)] drop-shadow-md"
           animate={
             motionOn
               ? { y: [0, -14, 0], x: [0, 8, -6, 0], rotate: [-2, 2, -1, -2] }
