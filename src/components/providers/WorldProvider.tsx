@@ -9,7 +9,12 @@ export function WorldProvider({ children }: { children: React.ReactNode }) {
   const settings = useWorldStore((s) => s.save.settings);
 
   useEffect(() => {
-    hydrate();
+    try {
+      hydrate();
+    } catch (err) {
+      console.error("World hydrate failed; continuing with empty save.", err);
+      useWorldStore.setState({ hydrated: true });
+    }
   }, [hydrate]);
 
   useEffect(() => {
