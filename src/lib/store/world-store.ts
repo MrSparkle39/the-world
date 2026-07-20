@@ -147,6 +147,9 @@ export const useWorldStore = create<WorldStore>((set, get) => ({
 
   visitLocation: (locationId) => {
     const { save } = get();
+    // Idempotent: always writing lastVisitedAt caused Maximum update depth
+    // when a page effect depended on `profile` (e.g. /home).
+    if (save.progress.visitedLocations.includes(locationId)) return;
     const next = {
       ...save,
       profile: save.profile
@@ -154,9 +157,7 @@ export const useWorldStore = create<WorldStore>((set, get) => ({
         : null,
       progress: {
         ...save.progress,
-        visitedLocations: Array.from(
-          new Set([...save.progress.visitedLocations, locationId]),
-        ),
+        visitedLocations: [...save.progress.visitedLocations, locationId],
       },
     };
     repo.save(next);

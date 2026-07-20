@@ -19,10 +19,12 @@ export default function HomeRoomPage() {
   const bumpLockedDoor = useWorldStore((s) => s.bumpLockedDoor);
   const [modal, setModal] = useState<{ title: string; body: string } | null>(null);
 
+  const companionId = profile?.companionId;
+
   useEffect(() => {
-    if (!profile?.companionId) router.replace("/start");
+    if (!companionId) router.replace("/start");
     else visitLocation("home");
-  }, [profile, router, visitLocation]);
+  }, [companionId, router, visitLocation]);
 
   if (!profile?.companionId) return null;
 
