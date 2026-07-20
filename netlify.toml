@@ -1,5 +1,5 @@
 # Next.js App Router on Netlify (OpenNext runtime).
-# Do not set publish to "out", "legacy", or ".next" in the Netlify UI — leave blank.
+# Leave Publish directory BLANK in the Netlify UI — do not set ".next" or ".next-dev".
 
 [build]
   command = "npm run build"
