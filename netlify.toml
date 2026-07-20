@@ -1,13 +1,11 @@
 # Next.js App Router on Netlify (OpenNext runtime).
-# Do not set publish to "out" or "legacy" — this is not a static export.
+# Do not set publish to "out", "legacy", or ".next" in the Netlify UI — leave blank.
 
 [build]
   command = "npm run build"
 
 [build.environment]
   NODE_VERSION = "20"
-  # Leave PUBLISH unset so the Next.js runtime owns the output.
-  # If the Netlify UI has Publish directory = "out" or "legacy", clear it.
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
